@@ -8,10 +8,12 @@ namespace policripsysoftware
 {
     class pasien
     {
-        public int id;
-        public string Nama;
-        public int umur;
-        public string gender;
+        pasien id,nama,umur,gender;
+        id = new pasien();
+        nama = new pasien();
+        umur = new pasien();
+        gender = new pasien();
+
 
     }
 }

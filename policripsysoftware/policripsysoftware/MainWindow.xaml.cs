@@ -24,5 +24,10 @@ namespace policripsysoftware
         {
             InitializeComponent();
         }
+
+        private void Button_Click()
+        {
+
+        }
     }
 }
