@@ -14,3 +14,5 @@ C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoft
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CoreCompileInputs.cache
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.exe
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.pdb
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LaporanKeuangan.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LaporanKeuangan.baml

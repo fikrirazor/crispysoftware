@@ -15,18 +15,13 @@ using System.Windows.Shapes;
 namespace policripsysoftware
 {
     /// <summary>
-    /// Interaction logic for WindowPasien.xaml
+    /// Interaction logic for LaporanKeuangan.xaml
     /// </summary>
-    public partial class WindowPasien : Window
+    public partial class LaporanKeuangan : Window
     {
-        public WindowPasien()
+        public LaporanKeuangan()
         {
             InitializeComponent();
-        }
-
-        private void InitializeComponent()
-        {
-            throw new NotImplementedException();
         }
     }
 }

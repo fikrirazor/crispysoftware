@@ -10,9 +10,10 @@
         <Button Content="Rawat jalan" HorizontalAlignment="Left" Margin="312,116,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
         <Button Content="Rawat Inap" HorizontalAlignment="Left" Margin="312,193,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
         <Button Content="Pemeriksaan" HorizontalAlignment="Left" Margin="312,333,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
-        <Button Content="Pasien" HorizontalAlignment="Left" Margin="25,370,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
+        <Button x:Name="PasienButton" Content="Pasien" HorizontalAlignment="Left" Margin="25,370,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52" IsCancel="True"/>
         <Button Content="Dokter" HorizontalAlignment="Left" Margin="25,302,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
         <Button Content="Obat" HorizontalAlignment="Left" Margin="25,235,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
         <Button Content="Ruangan" HorizontalAlignment="Left" Margin="25,162,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
+        <Button x:Name="keuangan" Content="Keuangan" HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
     </Grid>
 </Window>
