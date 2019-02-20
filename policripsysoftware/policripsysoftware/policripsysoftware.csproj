@@ -55,12 +55,8 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="pasien.cs" />
-    <Compile Include="laporan keuangan.xaml.cs">
-      <DependentUpon>laporan keuangan.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="RegistrasiPasien.xaml.cs">
-      <DependentUpon>RegistrasiPasien.xaml</DependentUpon>
+    <Compile Include="pasien.xaml.cs">
+      <DependentUpon>pasien.xaml</DependentUpon>
     </Compile>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -74,11 +70,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="laporan keuangan.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="RegistrasiPasien.xaml">
+    <Page Include="pasien.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace policripsysoftware
 {
     /// <summary>
-    /// Interaction logic for Window3.xaml
+    /// Interaction logic for WindowPasien.xaml
     /// </summary>
-    public partial class Window3 : Window
+    public partial class WindowPasien : Window
     {
-        public Window3()
+        public WindowPasien()
         {
             InitializeComponent();
         }
