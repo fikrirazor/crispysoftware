@@ -157,7 +157,7 @@ namespace policripsysoftware {
             this.DokterButton = ((System.Windows.Controls.Button)(target));
             
             #line 13 "..\..\MainWindow.xaml"
-            this.DokterButton.Click += new System.Windows.RoutedEventHandler(this.DokterButton_Click);
+            this.DokterButton.Click += new System.Windows.RoutedEventHandler(this.Button_Click);
             
             #line default
             #line hidden
