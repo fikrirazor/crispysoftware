@@ -60,11 +60,20 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="auth.cs" />
+    <Compile Include="JenisKelamin.cs" />
     <Compile Include="LaporanKeuangan.xaml.cs">
       <DependentUpon>LaporanKeuangan.xaml</DependentUpon>
     </Compile>
+    <Compile Include="lw.xaml.cs">
+      <DependentUpon>lw.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pasien.cs" />
     <Page Include="LaporanKeuangan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="lw.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -80,8 +89,15 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="PasienWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PasienWindow.xaml.cs">
+      <DependentUpon>PasienWindow.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>
     </Compile>

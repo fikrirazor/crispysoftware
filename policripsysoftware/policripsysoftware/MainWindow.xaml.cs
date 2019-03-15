@@ -32,7 +32,7 @@ namespace policripsysoftware
 
         private void PasienButton_Click(object sender, RoutedEventArgs e)
         {
-            var WP = new WindowPasien();
+            var WP = new PasienWindow();
             WP.Show();
             this.Close();
         }
