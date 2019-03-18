@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
-        Title="pw" Height="450" Width="800">
+        Title="pw" Height="450" Width="320">
     <Grid>
-        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="bb" Content="Baru" HorizontalAlignment="Left" Margin="77,98,0,0" VerticalAlignment="Top" Width="147" Height="66"/>
+        <Button x:Name="bl" Content="Lama" HorizontalAlignment="Left" Margin="70,244,0,0" VerticalAlignment="Top" Width="154" Height="80"/>
+
     </Grid>
 </Window>

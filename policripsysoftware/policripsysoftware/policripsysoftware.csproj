@@ -69,6 +69,18 @@
       <DependentUpon>lw.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pasien.cs" />
+    <Compile Include="pbw.xaml.cs">
+      <DependentUpon>pbw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="plw.xaml.cs">
+      <DependentUpon>plw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="psw.xaml.cs">
+      <DependentUpon>psw.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="pw.xaml.cs">
+      <DependentUpon>pw.xaml</DependentUpon>
+    </Compile>
     <Page Include="LaporanKeuangan.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -90,6 +102,22 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="PasienWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pbw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="plw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="psw.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="pw.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
