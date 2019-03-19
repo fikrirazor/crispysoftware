@@ -7,10 +7,10 @@
         mc:Ignorable="d"
         Title="lw" Height="450" Width="576" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
     <Grid Margin="0,0,2,0">
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="180,82,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="180,153,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="228"/>
+        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="23" Margin="180,82,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228"/>
         <Button x:Name="lb" Content="Login" HorizontalAlignment="Left" Margin="216,295,0,0" VerticalAlignment="Top" Width="140" Height="31" Click="Lb_Click"/>
         <CheckBox Content="Ingat Akun?" HorizontalAlignment="Left" Margin="236,243,0,0" VerticalAlignment="Top" Width="120"/>
+        <PasswordBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="180,159,0,0" VerticalAlignment="Top" Width="228" Height="23" Password="Password"/>
 
     </Grid>
 </Window>

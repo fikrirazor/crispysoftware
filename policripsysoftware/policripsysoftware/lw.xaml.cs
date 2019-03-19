@@ -20,7 +20,7 @@ namespace policripsysoftware
     /// </summary>
     public partial class lw : Window
     {
-        string dbConnectionString = @"Data Source=db\poliklinik.db;Version=3;";
+        string dbConnectionString = string.Format(@"Data Source=\\db\\poliklinik.db;Version=3;New=False;Compress=True;Journal Mode=Off"); 
         public lw()
         {
             InitializeComponent();
@@ -28,15 +28,37 @@ namespace policripsysoftware
 
         private void Lb_Click(object sender, RoutedEventArgs e)
         {
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString,true);
             // Open Connection to database
             try
             {
                 sqliteCon.Open();
-                string Query = "select * from karyawan where username='"
+                string Query = "select * from karyawan where username='" + this.txtusername.Text + "' and password='" + this.txtpassword.Password + "' ";
+                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
+
+                createCommand.ExecuteNonQuery();
+                SQLiteDataReader dr = createCommand.ExecuteReader();
+
+                int count = 0;
+                while (dr.Read())
+                {
+                    count++;
+                }
+                if (count == 1)
+                {
+                    MessageBox.Show("Username and Password is Correct");
+                }
+                if (count > 1)
+                {
+                    MessageBox.Show("Duplicate Username and password Try Again");
+                }
+                if (count < 1)
+                {
+                    MessageBox.Show("Username and password is not correct");
+                }
             }catch(Exception ex)
             {
-                MessageBox.Show(ex.Message)
+                MessageBox.Show(ex.Message);
             }
         }
     }
