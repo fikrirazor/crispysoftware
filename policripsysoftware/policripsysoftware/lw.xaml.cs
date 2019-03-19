@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+using System.Data.SQLite;
 namespace policripsysoftware
 {
     /// <summary>
@@ -19,9 +20,24 @@ namespace policripsysoftware
     /// </summary>
     public partial class lw : Window
     {
+        string dbConnectionString = @"Data Source=db\poliklinik.db;Version=3;";
         public lw()
         {
             InitializeComponent();
+        }
+
+        private void Lb_Click(object sender, RoutedEventArgs e)
+        {
+            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString);
+            // Open Connection to database
+            try
+            {
+                sqliteCon.Open();
+                string Query = "select * from karyawan where username='"
+            }catch(Exception ex)
+            {
+                MessageBox.Show(ex.Message)
+            }
         }
     }
 }
