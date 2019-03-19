@@ -23,5 +23,19 @@ namespace policripsysoftware
         {
             InitializeComponent();
         }
+
+        private void Bb_Click(object sender, RoutedEventArgs e)
+        {
+            var p = new pbw();
+            p.Show();
+            Close();
+        }
+
+        private void Bl_Click(object sender, RoutedEventArgs e)
+        {
+            var pl = new plw();
+            pl.Show();
+            Close();
+        }
     }
 }

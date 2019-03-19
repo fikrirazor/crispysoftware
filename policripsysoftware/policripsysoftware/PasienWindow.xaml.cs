@@ -19,7 +19,7 @@ namespace policripsysoftware
     /// </summary>
     public partial class PasienWindow : Window
     {
-        private char l;
+        
 
         public PasienWindow()
         {
@@ -33,10 +33,7 @@ namespace policripsysoftware
 
         private void LakiButton_Checked(object sender, RoutedEventArgs e)
         {
-            char p, l;
-            var J = new JenisKelamin(l,p);
-            l = l;
-            J.validationgender(l, p);
+            
 
         }
     }

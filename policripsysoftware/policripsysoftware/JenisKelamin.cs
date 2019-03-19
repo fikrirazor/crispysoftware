@@ -15,12 +15,7 @@ namespace policripsysoftware
             p = this.p;
             l = this.l;
             }
-        public bool validationgender()
-        {
-            if (this.l==l && p == this.p){
-                return true;
-            }
-        }
+        
 
     }
 }

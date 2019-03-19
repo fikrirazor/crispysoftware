@@ -25,23 +25,12 @@ namespace policripsysoftware
             InitializeComponent();
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void HelloButton_Click(object sender, RoutedEventArgs e)
         {
-          
-        }
-
-        private void PasienButton_Click(object sender, RoutedEventArgs e)
-        {
-            var WP = new PasienWindow();
-            WP.Show();
-            this.Close();
-        }
-
-        private void KeuanganButton_Click(object sender, RoutedEventArgs e)
-        {
-            var LK = new LaporanKeuangan();
-            LK.Show();
-            this.Close();
+            var l = new lw();
+            l.Show();
+            Close();
+            
         }
     }
 }

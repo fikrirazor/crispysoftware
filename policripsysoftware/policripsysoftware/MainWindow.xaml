@@ -7,12 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="497.541" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None">
     <Grid>
-        <Button x:Name="RawatJalanButton" Content="Rawat jalan" HorizontalAlignment="Left" Margin="312,302,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
-        <Button x:Name="RekamMedisButton" Content="Rekam Medis" HorizontalAlignment="Left" Margin="312,370,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
-        <Button x:Name="PasienButton" Content="Pasien" HorizontalAlignment="Left" Margin="25,370,0,0" VerticalAlignment="Top" Width="149" Click="PasienButton_Click" Height="52" IsCancel="True"/>
-        <Button x:Name="DokterButton" Content="Dokter" HorizontalAlignment="Left" Margin="25,302,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
-        <Button x:Name="ObatButton" Content="Obat" HorizontalAlignment="Left" Margin="25,235,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
-        <Button x:Name="RuanganButton" Content="Ruangan" HorizontalAlignment="Left" Margin="25,162,0,0" VerticalAlignment="Top" Width="149" Click="Button_Click" Height="52"/>
-        <Button x:Name="KeuanganButton" Content="Keuangan" HorizontalAlignment="Left" Margin="25,20,0,0" VerticalAlignment="Top" Width="149" Click="KeuanganButton_Click" Height="52"/>
+        <Button x:Name="HelloButton" Content="Hello" HorizontalAlignment="Left" Margin="164,240,0,0" VerticalAlignment="Top" Width="149" Click="HelloButton_Click" Height="52" IsCancel="True"/>
+        <Label Content="Selamat Datang Admin/Karyawan Klik tombol dibawah ini untuk melakukan login!" HorizontalAlignment="Left" Margin="27,131,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>
