@@ -12,7 +12,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-using System.Data.SQLite;
 namespace policripsysoftware
 {
     /// <summary>
@@ -20,7 +19,7 @@ namespace policripsysoftware
     /// </summary>
     public partial class lw : Window
     {
-        string dbConnectionString = string.Format(@"Data Source=\\db\\poliklinik.db;Version=3;New=False;Compress=True;Journal Mode=Off"); 
+        string dbConnectionString = string.Format(@"Data Source=//db//poliklinik.db;Version=3;New=False;Compress=True;Journal Mode=Off"); 
         public lw()
         {
             InitializeComponent();
@@ -28,38 +27,9 @@ namespace policripsysoftware
 
         private void Lb_Click(object sender, RoutedEventArgs e)
         {
-            SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString,true);
-            // Open Connection to database
-            try
-            {
-                sqliteCon.Open();
-                string Query = "select * from karyawan where username='" + this.txtusername.Text + "' and password='" + this.txtpassword.Password + "' ";
-                SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
+            peg peg = new peg();
+            peg.login(this.txtusername.Text,this.txtpassword.Password);
 
-                createCommand.ExecuteNonQuery();
-                SQLiteDataReader dr = createCommand.ExecuteReader();
-
-                int count = 0;
-                while (dr.Read())
-                {
-                    count++;
-                }
-                if (count == 1)
-                {
-                    MessageBox.Show("Username and Password is Correct");
-                }
-                if (count > 1)
-                {
-                    MessageBox.Show("Duplicate Username and password Try Again");
-                }
-                if (count < 1)
-                {
-                    MessageBox.Show("Username and password is not correct");
-                }
-            }catch(Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
     }
 }
