@@ -6,18 +6,29 @@ using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Data;
 using System.Data.SQLite;
+using System.Windows;
+
 namespace policripsysoftware
 {
-    class peg
+    class pegawai
     {
         private int no_peg;
         private string nama_peg;
+        private string username;
         private string password;
-        private string dbConnectionString = string.Format(@"Data Source=//db//poliklinik.db;Version=3;New=False;Compress=True;Journal Mode=Off");
-        public peg(int no_peg, string nama_peg)
+        string dbPath = System.Environment.CurrentDirectory + "\\DB";
+        string dbFilePath;
+       
+        public pegawai()
+        {
+        }
+
+        public pegawai(int no_peg, string nama_peg, string username, string password)
         {
             this.no_peg = no_peg;
             this.nama_peg = nama_peg;
+            this.username = username;
+            this.password = password;
         }
         public string namapeg
         {
@@ -41,14 +52,28 @@ namespace policripsysoftware
                 this.password = value ;
             }
         }
-        public string login(string username, string password)
+        public string usr
         {
+            get
+            {
+                return this.username;
+            }
+            set
+            {
+                this.username = value;
+            }
+        }
+
+        public void login()
+        {
+            dbFilePath = dbPath + "\\poliklinik.db";
+            string dbConnectionString = string.Format(@"Data Source={0};Version=3;New=False;Compress=True;Journal Mode=Off", dbFilePath);
             SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString, true);
-            // Open Connection to database
+            //Open Connection to database
             try
             {
                 sqliteCon.Open();
-                string Query = "select * from karyawan where username='" + username + "' and password='" + password + "' ";
+                string Query = "select * from karyawan where username='" + usr + "' and password='" + pass + "' ";
                 SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
 
                 createCommand.ExecuteNonQuery();

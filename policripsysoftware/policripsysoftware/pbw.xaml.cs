@@ -19,9 +19,15 @@ namespace policripsysoftware
     /// </summary>
     public partial class pbw : Window
     {
+       // pasien ps = new pasien();
         public pbw()
         {
             InitializeComponent();
+        }
+
+        private void Pbb_Click(object sender, RoutedEventArgs e)
+        {
+            //ps.Nama=namatxt;
         }
     }
 }

@@ -8,14 +8,14 @@
         Title="pbw" Height="450" Width="485.039">
     <Grid>
         <Label Content="Pendaftaran Baru" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,31,0,0"/>
-        <Label Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,84,0,0"/>
+        <Label Content="Nama" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,84,0,0"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="45,133,0,0" VerticalAlignment="Top"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="45,179,0,0" VerticalAlignment="Top"/>
         <Label Content="Label" HorizontalAlignment="Left" Margin="45,230,0,0" VerticalAlignment="Top"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="193,87,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="namatxt" HorizontalAlignment="Left" Height="23" Margin="193,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="193,137,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox HorizontalAlignment="Left" Height="23" Margin="193,234,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.162,-0.304"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="212,342,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="pbb" Content="Button" HorizontalAlignment="Left" Margin="212,342,0,0" VerticalAlignment="Top" Width="75" Click="Pbb_Click"/>
         <RadioButton Content="L" HorizontalAlignment="Left" Margin="168,185,0,0" VerticalAlignment="Top"/>
         <RadioButton Content="P" HorizontalAlignment="Left" Margin="298,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.194,-1.367"/>
 

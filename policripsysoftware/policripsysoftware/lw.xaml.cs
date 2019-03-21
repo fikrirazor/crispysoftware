@@ -19,7 +19,8 @@ namespace policripsysoftware
     /// </summary>
     public partial class lw : Window
     {
-        string dbConnectionString = string.Format(@"Data Source=//db//poliklinik.db;Version=3;New=False;Compress=True;Journal Mode=Off"); 
+        
+        pegawai peg = new pegawai();
         public lw()
         {
             InitializeComponent();
@@ -27,8 +28,11 @@ namespace policripsysoftware
 
         private void Lb_Click(object sender, RoutedEventArgs e)
         {
-            peg peg = new peg();
-            peg.login(this.txtusername.Text,this.txtpassword.Password);
+           
+            
+            peg.usr = txtusername.Text;
+            peg.pass = txtpassword.Password;
+            peg.login();
 
         }
     }

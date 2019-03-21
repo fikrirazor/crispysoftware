@@ -20,6 +20,7 @@ namespace policripsysoftware
     /// </summary>
     public partial class MainWindow : Window
     {
+        DbCreator db = new DbCreator();
         public MainWindow()
         {
             InitializeComponent();
@@ -27,6 +28,7 @@ namespace policripsysoftware
 
         private void HelloButton_Click(object sender, RoutedEventArgs e)
         {
+            db.createDbFile();
             var l = new lw();
             l.Show();
             Close();
