@@ -21,14 +21,19 @@ namespace policripsysoftware
     public partial class MainWindow : Window
     {
         DbCreator db = new DbCreator();
+        
         public MainWindow()
         {
+            db.createDbFile();
+            db.createDbConnection();
+            db.createTables();
+            db.fillTable();
             InitializeComponent();
         }
 
         private void HelloButton_Click(object sender, RoutedEventArgs e)
-        {
-            db.createDbFile();
+        {           
+            
             var l = new lw();
             l.Show();
             Close();

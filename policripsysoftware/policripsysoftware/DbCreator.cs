@@ -15,6 +15,7 @@ namespace policripsysoftware
         string sqlCommand;
         string dbPath = System.Environment.CurrentDirectory + "\\DB";
         string dbFilePath;
+
         public void createDbFile()
         {
             if (!string.IsNullOrEmpty(dbPath) && !Directory.Exists(dbPath))
@@ -37,12 +38,11 @@ namespace policripsysoftware
 
         public void createTables()
         {
-            if (!checkIfExist("MY_TABLE"))
+            if (!checkIfExist("karyawan"))
             {
-                sqlCommand = "CREATE TABLE MY_TBALE(idnt_test INTEGER PRIMARY KEY AUTOINCREMENT,code_test_type INTEGER";
+                sqlCommand = "CREATE TABLE karyawan(no_peg INTEGER PRIMARY KEY, nama_peg TEXT NOT NULL, username TEXT NOT NULL UNIQUE, password TEXT  NOT NULL);";
                 executeQuery(sqlCommand);
-            }
-
+            }            
         }
 
         public bool checkIfExist(string tableName)
@@ -68,12 +68,11 @@ namespace policripsysoftware
             return Convert.ToInt32(result) > 0 ? true : false;
         }
 
-
         public void fillTable()
         {
-            if (!checkIfTableContainsData("MY_TABLE"))
+            if (!checkIfTableContainsData("karyawan"))
             {
-                sqlCommand = "insert into MY_TABLE (code_test_type) values (999)";
+                sqlCommand = "insert into karyawan (no_peg,nama_peg, username, password) VALUES (1, 'admin', 'admin', 'admin');";
                 executeQuery(sqlCommand);
             }
         }

@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.Data;
-using System.Data.SQLite;
 using System.Windows;
 
 namespace policripsysoftware
@@ -87,6 +86,10 @@ namespace policripsysoftware
                 if (count == 1)
                 {
                     MessageBox.Show("Username and Password is Correct");
+                    pw pw = new pw();
+                    pw.Show();
+                    lw lw = new lw();
+                    lw.Close();
                 }
                 if (count > 1)
                 {
