@@ -24,8 +24,8 @@ namespace policripsysoftware
         public lw()
         {
             InitializeComponent();
-        }
-
+        }               
+        
         private void Lb_Click(object sender, RoutedEventArgs e)
         {
            
@@ -33,7 +33,21 @@ namespace policripsysoftware
             peg.usr = txtusername.Text;
             peg.pass = txtpassword.Password;
             peg.login();
+            
+        }
 
+        private void Txtusername_GotFocus(object sender, RoutedEventArgs e)
+        {
+            TextBox tb = (TextBox)sender;
+            tb.Text = string.Empty;
+            tb.GotFocus -= Txtusername_GotFocus;
+        }
+
+        private void Txtpassword_GotFocus(object sender, RoutedEventArgs e)
+        {
+            PasswordBox tb = (PasswordBox)sender;
+            tb.Password = string.Empty;
+            tb.GotFocus -= Txtpassword_GotFocus;
         }
     }
 }

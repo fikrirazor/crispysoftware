@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace policripsysoftware
 {
-    class pegawai
+    class pegawai 
     {
         private int no_peg;
         private string nama_peg;
@@ -85,19 +85,20 @@ namespace policripsysoftware
                 }
                 if (count == 1)
                 {
-                    MessageBox.Show("Username and Password is Correct");
-                    pw pw = new pw();
-                    pw.Show();
+                    MessageBox.Show("Username and Password is Benar");
                     lw lw = new lw();
                     lw.Close();
+                    pw pw = new pw();
+                    pw.Show();
+                   
                 }
                 if (count > 1)
                 {
-                    MessageBox.Show("Duplicate Username and password Try Again");
+                    MessageBox.Show("Username and password Sudah Ada");
                 }
                 if (count < 1)
                 {
-                    MessageBox.Show("Username and password is not correct");
+                    MessageBox.Show("Username and password Salah");
                 }
             }
             catch (Exception ex)
