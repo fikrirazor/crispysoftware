@@ -31,3 +31,36 @@ C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoft
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\psw.baml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\pw.baml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CopyComplete
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.exe.config
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.exe
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.pdb
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.dll
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.xml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.dll.config
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csprojAssemblyReference.cache
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LaporanKeuangan.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\lw.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainWindow.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PasienWindow.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\pbw.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\plw.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\psw.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\pw.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\App.g.cs
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware_MarkupCompile.cache
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware_MarkupCompile.lref
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LaporanKeuangan.baml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\lw.baml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainWindow.baml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PasienWindow.baml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\pbw.baml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\plw.baml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\psw.baml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\pw.baml
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.g.resources
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.Properties.Resources.resources
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.GenerateResource.cache
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CoreCompileInputs.cache
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CopyComplete
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.exe
+D:\Tugas Kuliah IK\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.pdb

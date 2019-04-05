@@ -7,10 +7,12 @@
         mc:Ignorable="d"
         Title="lw" Height="450" Width="576" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
     <Grid Margin="0,0,2,0">
-        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="23" Margin="180,82,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" GotFocus="Txtusername_GotFocus"/>
-        <Button x:Name="lb" Content="Login" HorizontalAlignment="Left" Margin="216,295,0,0" VerticalAlignment="Top" Width="140" Height="31" Click="Lb_Click"/>
+        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="23" Margin="180,82,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" GotFocus="Txtusername_GotFocus" Background="White" BorderBrush="Black" CaretBrush="White" BorderThickness="0 0 0 1"
+                 />
+        <Button x:Name="lb" Content="LOGIN" HorizontalAlignment="Left" Margin="216,333,0,0" VerticalAlignment="Top" Width="140" Height="31" Click="Lb_Click" Background="#FF1B5A9E" Foreground="White" FontWeight="Bold" FontSize="18"/>
         <CheckBox Content="Ingat Akun?" HorizontalAlignment="Left" Margin="236,243,0,0" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="180,159,0,0" VerticalAlignment="Top" Width="228" Height="23" Password="Password" GotFocus="Txtpassword_GotFocus"/>
+        <PasswordBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="180,159,0,0" VerticalAlignment="Top" Width="228" Height="23" Password="Password" GotFocus="Txtpassword_GotFocus" Background="{x:Null}" BorderBrush="Black" BorderThickness="0 0 0 1"/>
+        <Label Content="Login&#xD;&#xA;" HorizontalAlignment="Left" Margin="43,10,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.158,-0.385" Width="80" FontWeight="Bold" FontSize="24" Height="44"/>
 
     </Grid>
 </Window>

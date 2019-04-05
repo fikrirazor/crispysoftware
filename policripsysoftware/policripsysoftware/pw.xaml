@@ -5,16 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
-        Title="pw" Height="450" Width="686.7" WindowStyle="None" Background="#FF349546">
-    <Grid x:Name="panel1" Margin="0,0,504,0" Background="#FF349546">
+        Title="pw" Height="450" Width="686.7" WindowStyle="None" Background="#FF16304F">
+    <Grid x:Name="panel1" Margin="0,0,504,0" Background="#FF16304F">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="bb" Content="Pendaftaran Baru" HorizontalAlignment="Left" Margin="12,103,0,0" VerticalAlignment="Top" Width="151" Height="51" Click="Bb_Click" Background="White"/>
-        <Button x:Name="bl" Content="Pendaftaran Lama" HorizontalAlignment="Left" Margin="13,166,0,0" VerticalAlignment="Top" Width="151" Height="49" Click="Bl_Click" Background="White"/>
+        <Button x:Name="bb" Content="Pendaftaran Baru" HorizontalAlignment="Left" Margin="20,103,0,0" VerticalAlignment="Top" Width="155" Height="51" Click="Bb_Click" Background="#FF16304F" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold"/>
+        <Button x:Name="bl" Content="Pendaftaran Lama" HorizontalAlignment="Left" Margin="20,154,0,0" VerticalAlignment="Top" Width="155" Height="49" Click="Bl_Click" Background="#FF16304F" BorderBrush="{x:Null}" Foreground="White" FontWeight="Bold"/>
         <DockPanel HorizontalAlignment="Left" LastChildFill="False" Margin="175,10,-506,-4" Width="506" RenderTransformOrigin="0.491,0.495" Height="436" VerticalAlignment="Top" Background="#FFD8D8D8"/>
         <DockPanel HorizontalAlignment="Left" Height="80" LastChildFill="False" Margin="218,0,-113,0" VerticalAlignment="Top" Width="70" Background="#FF84B679">
             <Image x:Name="imgbox" Height="80" VerticalAlignment="Top" Width="70">
+                <Image.Source>
+                    <BitmapImage DecodePixelWidth="442" DecodePixelHeight="506" UriSource="/img/logo.jpg" />
+                </Image.Source>
+            </Image>
+        </DockPanel>
+        <DockPanel HorizontalAlignment="Left" Height="51" LastChildFill="False" Margin="20,103,0,0" VerticalAlignment="Top" Width="24" RenderTransformOrigin="4.062,-0.087">
+            <Image Height="51" VerticalAlignment="Top" Width="23">
                 <Image.Source>
                     <BitmapImage DecodePixelWidth="442" DecodePixelHeight="506" UriSource="/img/logo.jpg" />
                 </Image.Source>

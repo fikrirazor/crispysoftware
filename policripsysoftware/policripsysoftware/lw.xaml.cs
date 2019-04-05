@@ -49,5 +49,10 @@ namespace policripsysoftware
             tb.Password = string.Empty;
             tb.GotFocus -= Txtpassword_GotFocus;
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
