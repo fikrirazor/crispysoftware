@@ -16,12 +16,18 @@ namespace policripsysoftware
 {
     /// <summary>
     /// Interaction logic for plw.xaml
+    /// ini adalah pasien lama window digunakan jika ada pasien lama yang ingin mendaftar
     /// </summary>
     public partial class plw : Window
     {
         public plw()
         {
             InitializeComponent();
+        }
+
+        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
         }
     }
 }

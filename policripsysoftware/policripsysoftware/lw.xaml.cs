@@ -20,7 +20,7 @@ namespace policripsysoftware
     public partial class lw : Window
     {
         
-        pegawai peg = new pegawai();
+        karyawan peg = new karyawan();
         public lw()
         {
             InitializeComponent();

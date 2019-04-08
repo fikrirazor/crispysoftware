@@ -10,8 +10,8 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="bb" Content="Pendaftaran Baru" HorizontalAlignment="Left" Margin="12,103,0,0" VerticalAlignment="Top" Width="151" Height="51" Click="Bb_Click" Background="White"/>
-        <Button x:Name="bl" Content="Pendaftaran Lama" HorizontalAlignment="Left" Margin="13,166,0,0" VerticalAlignment="Top" Width="151" Height="49" Click="Bl_Click" Background="White"/>
+        <Button x:Name="bb" Content="Pendaftaran Baru" HorizontalAlignment="Left" Margin="12,103,0,0" VerticalAlignment="Top" Width="151" Height="51" Click="Bb_Click" Background="#FF349546" BorderBrush="#FF349546" Foreground="#FFF9F5F5" FontSize="24" FontFamily="TypoUpright BT"/>
+        <Button x:Name="bl" Content="Pendaftaran Lama" HorizontalAlignment="Left" Margin="13,166,0,0" VerticalAlignment="Top" Width="151" Height="49" Click="Bl_Click" Background="#FF349546" BorderBrush="#FF349546" Foreground="#FFF9F5F5" FontSize="24" FontFamily="TypoUpright BT"/>
         <DockPanel HorizontalAlignment="Left" LastChildFill="False" Margin="175,10,-506,-4" Width="506" RenderTransformOrigin="0.491,0.495" Height="436" VerticalAlignment="Top" Background="#FFD8D8D8"/>
         <DockPanel HorizontalAlignment="Left" Height="80" LastChildFill="False" Margin="218,0,-113,0" VerticalAlignment="Top" Width="70" Background="#FF84B679">
             <Image x:Name="imgbox" Height="80" VerticalAlignment="Top" Width="70">

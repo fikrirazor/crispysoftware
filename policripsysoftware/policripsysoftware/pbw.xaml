@@ -5,19 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
-        Title="pbw" Height="450" Width="485.039">
+        Title="pbw" Height="450" Width="769.039" WindowStyle="None">
     <Grid>
-        <Label Content="Pendaftaran Baru" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="212,31,0,0"/>
-        <Label Content="Nama" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,84,0,0"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="45,133,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="45,179,0,0" VerticalAlignment="Top"/>
-        <Label Content="Label" HorizontalAlignment="Left" Margin="45,230,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="namatxt" HorizontalAlignment="Left" Height="23" Margin="193,87,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="193,137,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <TextBox HorizontalAlignment="Left" Height="23" Margin="193,234,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" RenderTransformOrigin="0.162,-0.304"/>
-        <Button x:Name="pbb" Content="Button" HorizontalAlignment="Left" Margin="212,342,0,0" VerticalAlignment="Top" Width="75" Click="Pbb_Click"/>
-        <RadioButton Content="L" HorizontalAlignment="Left" Margin="168,185,0,0" VerticalAlignment="Top"/>
-        <RadioButton Content="P" HorizontalAlignment="Left" Margin="298,188,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.194,-1.367"/>
+        <Label Content="Pendaftaran Baru" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="267,56,0,0" Width="300"/>
+        <Label Content="Nama" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,109,0,0"/>
+        <Label Content="No KTP" HorizontalAlignment="Left" Margin="210,158,0,0" VerticalAlignment="Top"/>
+        <Label Content="Jenis Kelamin" HorizontalAlignment="Left" Margin="210,204,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tanggal Lahir" HorizontalAlignment="Left" Margin="210,255,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="namatxt" HorizontalAlignment="Left" Height="23" Margin="358,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="noktptxt" HorizontalAlignment="Left" Height="23" Margin="358,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="pbb" Content="Daftar" HorizontalAlignment="Left" Margin="267,367,0,0" VerticalAlignment="Top" Width="263" Click="Pbb_Click" Height="39"/>
+        <TextBox x:Name="nohptxt" HorizontalAlignment="Left" Height="23" Margin="358,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="No Hp" HorizontalAlignment="Left" Margin="214,303,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="tanggallahirtxt" HorizontalAlignment="Left" Margin="358,257,0,0" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>

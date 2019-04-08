@@ -9,7 +9,7 @@
     <Grid>
         <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Nama" VerticalAlignment="Top" Width="120" Margin="125,69,0,0"/>
         <Button x:Name="cb" Content="Cari" HorizontalAlignment="Left" Margin="125,120,0,0" VerticalAlignment="Top" Width="120"/>
-        <DataGrid HorizontalAlignment="Left" Height="178" Margin="10,178,0,0" VerticalAlignment="Top" Width="344"/>
+        <DataGrid x:Name="datapasien" HorizontalAlignment="Left" Height="178" Margin="10,178,0,0" VerticalAlignment="Top" Width="344" SelectionChanged="DataGrid_SelectionChanged" AutoGenerateColumns="False"/>
 
     </Grid>
 </Window>
