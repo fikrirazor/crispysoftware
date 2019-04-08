@@ -79,7 +79,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="auth.cs" />
     <Compile Include="DbCreator.cs" />
     <Compile Include="JenisKelamin.cs" />
     <Compile Include="kpw.xaml.cs">
