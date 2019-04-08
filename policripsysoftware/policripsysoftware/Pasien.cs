@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows;
 
 namespace policripsysoftware
 {
@@ -52,8 +53,7 @@ namespace policripsysoftware
             string dbFilePath = dbPath + "\\poliklinik.db";
             SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
             sql_con.Open();
-            SQLiteCommand Query = new SQLiteCommand("insert into pasien(nopasien,nama,tanggallahir,nohp,noktp) values(@a,@b,@c,@d,@e)", sql_con);
-            Query.Parameters.AddWithValue("@a", nopasien);
+            SQLiteCommand Query = new SQLiteCommand("insert into pasien(nama,tanggallahir,nohp,noktp) values(@b,@c,@d,@e)", sql_con);
             Query.Parameters.AddWithValue("@b", nama);
             Query.Parameters.AddWithValue("@c", tanggallahir);
             Query.Parameters.AddWithValue("@d", nohp);
@@ -61,6 +61,11 @@ namespace policripsysoftware
             try
             {
                 Query.ExecuteNonQuery();
+                MessageBox.Show("Pendaftaran Berhasil!")
+                pbw pbw = new pbw();
+                pbw.Close();
+                pw pw = new pw();
+                pw.Show();
             }
             catch (Exception ex)
             {
