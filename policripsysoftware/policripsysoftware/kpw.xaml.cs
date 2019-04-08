@@ -28,8 +28,8 @@ namespace policripsysoftware
 
         private void Btv_Click(object sender, RoutedEventArgs e)
         {
-            pasien ps = new pasien();
-            ps.show(this.dataGrid);
+            DbCreator db = new DbCreator();
+            db.showpasien(this.dataGrid);
 
              
         }

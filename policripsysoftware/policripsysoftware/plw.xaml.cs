@@ -23,8 +23,8 @@ namespace policripsysoftware
         public plw()
         {
             InitializeComponent();
-            pasien ps = new pasien();
-            ps.show(this.datapasien);
+            DbCreator db = new DbCreator();
+            db.showpasien(this.datapasien);
         }
 
         private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
