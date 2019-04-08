@@ -28,19 +28,7 @@ namespace policripsysoftware
 
         private void Btv_Click(object sender, RoutedEventArgs e)
         {
-            /*
-            string dbPath = System.Environment.CurrentDirectory + "\\DB";
-            string dbFilePath = dbPath + "\\poliklinik.db";
-            SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
-            sql_con.Open();
-            SQLiteCommand comm = new SQLiteCommand("Select * From pasien", sql_con);
-            SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
-            DataSet ds = new DataSet();
-            da.Fill(ds);
-            DataTable dt = ds.Tables[0];
-            */
             pasien ps = new pasien();
-            //this.dataGrid.ItemsSource = dt.AsDataView();
             ps.show(this.dataGrid);
 
              
