@@ -37,5 +37,12 @@ namespace policripsysoftware
             pl.Show();
             Close();
         }
+
+        private void Bkp_Click(object sender, RoutedEventArgs e)
+        {
+            var kpw = new kpw();
+            kpw.Show();
+            Close();
+        }
     }
 }

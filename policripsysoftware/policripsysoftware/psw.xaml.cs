@@ -16,6 +16,7 @@ namespace policripsysoftware
 {
     /// <summary>
     /// Interaction logic for psw.xaml
+    /// poliklinik sehat window
     /// </summary>
     public partial class psw : Window
     {

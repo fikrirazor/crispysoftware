@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows;
+using System.Data;
+using System.Windows.Controls;
 
 namespace policripsysoftware
 {
@@ -61,7 +63,7 @@ namespace policripsysoftware
             try
             {
                 Query.ExecuteNonQuery();
-                MessageBox.Show("Pendaftaran Berhasil!")
+                MessageBox.Show("Pendaftaran Berhasil!");
                 pbw pbw = new pbw();
                 pbw.Close();
                 pw pw = new pw();
@@ -77,8 +79,18 @@ namespace policripsysoftware
             
         }
 
-        public void show()
+        public void show(DataGrid dataGrid)
         {
+            string dbPath = System.Environment.CurrentDirectory + "\\DB";
+            string dbFilePath = dbPath + "\\poliklinik.db";
+            SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
+            sql_con.Open();
+            SQLiteCommand comm = new SQLiteCommand("Select * From pasien", sql_con);
+            SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            dataGrid.ItemsSource = dt.AsDataView();
 
         }
     }

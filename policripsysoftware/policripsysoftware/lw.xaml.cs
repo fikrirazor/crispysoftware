@@ -16,6 +16,7 @@ namespace policripsysoftware
 {
     /// <summary>
     /// Interaction logic for lw.xaml
+    /// lw=login window
     /// </summary>
     public partial class lw : Window
     {
@@ -28,8 +29,7 @@ namespace policripsysoftware
         
         private void Lb_Click(object sender, RoutedEventArgs e)
         {
-           
-            
+                    
             peg.usr = txtusername.Text;
             peg.pass = txtpassword.Password;
             peg.login();
