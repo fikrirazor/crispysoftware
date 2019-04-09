@@ -6,18 +6,29 @@
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
         Title="pasien window" Height="593" Width="800" WindowStyle="None" Background="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="logo.jpg">
-    <Grid x:Name="panel1" Margin="0,0,624,0" Background="#FF202926">
+    <Grid x:Name="panel1" Margin="0,0,624,0" Background="White">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
         </Grid.ColumnDefinitions>
-        <Button x:Name="bb" HorizontalContentAlignment="Left" Content="Pendaftaran Baru" HorizontalAlignment="Left" Margin="10.3,88,-0.6,0" VerticalAlignment="Top" Width="165" Height="51" Click="Bb_Click" Background="#FF202926" BorderBrush="{x:Null}" Foreground="White" FontFamily="Verdana" TextOptions.TextFormattingMode="Display"/>
-        <Button x:Name="bl" HorizontalContentAlignment="Left" Content="Pendaftaran Lama" HorizontalAlignment="Left" Margin="10.3,139,-0.3,0" VerticalAlignment="Top" Width="164.7" Height="49" Click="Bl_Click" Background="#FF202926" BorderBrush="{x:Null}" Foreground="White" FontFamily="Verdana" TextOptions.TextFormattingMode="Display"/>
-        <Button x:Name="bkp" HorizontalContentAlignment="Left" HorizontalAlignment="Left" Margin="10.3,188,-0.3,0" VerticalAlignment="Top" Width="164.7" Height="52" Content="Kelola Pasien" Click="Bkp_Click" Background="#FF202926" BorderBrush="{x:Null}" Foreground="White" FontFamily="Verdana" TextOptions.TextFormattingMode="Display"/>
+        <Button x:Name="bb" HorizontalAlignment="Left" Margin="25.333,88,0,0" VerticalAlignment="Top" Width="120.367" Height="78" Click="Bb_Click" BorderBrush="{x:Null}" Foreground="White" FontFamily="Verdana" TextOptions.TextFormattingMode="Display" Background="White" Opacity="0.985">
+            <StackPanel Height="78" Width="109.634">
+                <Image Height="37.083" Source="011-clipboard.png"/>
+                <Label Content="Pendaftaran Baru" HorizontalAlignment="Center" VerticalAlignment="Center" Height="24.5" Width="109.634" Foreground="Black" FontSize="10"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="bl" HorizontalAlignment="Left" Margin="25.333,166,0,0" VerticalAlignment="Top" Width="120.367" Height="78" Click="Bl_Click" Background="White" BorderBrush="{x:Null}" Foreground="White" FontFamily="Verdana" TextOptions.TextFormattingMode="Display">
+            <StackPanel Height="75" Width="116.333">
+                <Image Height="38.334" Source="023-hospital.png"/>
+                <Label Content="Pendaftaran Lama" FontSize="10" Foreground="Black"/>
+            </StackPanel>
+        </Button>
+        <Button x:Name="bkp"  HorizontalAlignment="Left" Margin="10,255.667,0,0" VerticalAlignment="Top" Width="164.7" Height="52" Content="Kelola Pasien" Click="Bkp_Click" Background="#FF202926" BorderBrush="{x:Null}" Foreground="White" FontFamily="Verdana" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.502,0.769"/>
         <StackPanel x:Name="MainArea" Background="#FFD8D8D8" HorizontalAlignment="Left" Height="510" Margin="176,83,-626.667,0" RenderTransformOrigin="0.491,0.495" VerticalAlignment="Top" Width="626.667" />
         <DockPanel HorizontalAlignment="Left" Height="85" LastChildFill="False" Margin="0,-2,0,0" VerticalAlignment="Top" Width="176" Background="#FFFBFBFB">
             <Image Height="85" VerticalAlignment="Top" Width="176.166" Source="logo.jpg" StretchDirection="DownOnly" RenderTransformOrigin="0.494,0.505"/>
         </DockPanel>
         <DockPanel HorizontalAlignment="Left" Height="85" LastChildFill="False" Margin="176,-2,-626.667,0" VerticalAlignment="Top" Width="626.667" Background="Black"/>
+        <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
