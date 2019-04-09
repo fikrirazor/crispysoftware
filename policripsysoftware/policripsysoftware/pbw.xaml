@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="pbw" Height="450" Width="769.039" WindowStyle="None">
     <Grid>
-        <Label Content="Pendaftaran Baru" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="267,56,0,0" Width="300"/>
+        <Label Content="Pendaftaran Baru" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,51,0,0" Width="300"/>
         <Label Content="Nama" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,109,0,0"/>
         <Label Content="No KTP" HorizontalAlignment="Left" Margin="210,158,0,0" VerticalAlignment="Top"/>
         <Label Content="Jenis Kelamin" HorizontalAlignment="Left" Margin="210,204,0,0" VerticalAlignment="Top"/>

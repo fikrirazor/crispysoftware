@@ -27,22 +27,33 @@ namespace policripsysoftware
         private void Bb_Click(object sender, RoutedEventArgs e)
         {
             var p = new pbw();
-            p.Show();
-            Close();
+            MainArea.Children.Clear();
+
+            object content = p.Content;
+            p.Content = null;
+            MainArea.Children.Add(content as UIElement);        
         }
 
         private void Bl_Click(object sender, RoutedEventArgs e)
         {
             var pl = new plw();
-            pl.Show();
-            Close();
+            MainArea.Children.Clear();
+
+            object content = pl.Content;
+            pl.Content = null;
+            MainArea.Children.Add(content as UIElement);
         }
 
         private void Bkp_Click(object sender, RoutedEventArgs e)
         {
             var kpw = new kpw();
-            kpw.Show();
-            Close();
+            MainArea.Children.Clear();
+
+            object content = kpw.Content;
+            kpw.Content = null;
+            MainArea.Children.Add(content as UIElement);
         }
+
+        
     }
 }

@@ -66,26 +66,29 @@ namespace policripsysoftware
                     count++;
                 }
                 if (count == 1)
-                {
-                    MessageBox.Show("Username and Password is Benar");
-                    lw lw = new lw();
-                    lw.Close();
+                {                    
+                    MessageBox.Show("Username and Password is Benar");                                   
                     pw pw = new pw();
                     pw.Show();
-                   
                 }
                 if (count > 1)
                 {
                     MessageBox.Show("Username and password Sudah Ada");
+                    lw lw = new lw();
+                    lw.Show();
                 }
                 if (count < 1)
                 {
                     MessageBox.Show("Username and password Salah");
+                    lw lw = new lw();
+                    lw.Show();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                lw lw = new lw();
+                lw.Show();
             }
         }
         
