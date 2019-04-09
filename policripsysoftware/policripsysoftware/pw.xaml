@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
-        Title="pw" Height="593" Width="800" WindowStyle="None" Background="White" ResizeMode="NoResize">
+        Title="pasien window" Height="593" Width="800" WindowStyle="None" Background="White" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="logo.jpg">
     <Grid x:Name="panel1" Margin="0,0,624,0" Background="#FF202926">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>

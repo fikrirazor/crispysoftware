@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
-        Title="kpw" Height="450" Width="800">
+        Title="kpw" Height="510" Width="626.667">
     <Grid>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="295" Margin="36,47,0,0" VerticalAlignment="Top" Width="720"/>
-        <Button x:Name="btv" Content="Button" HorizontalAlignment="Left" Margin="379,370,0,0" VerticalAlignment="Top" Width="75" Click="Btv_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="295" Margin="36,47,0,0" VerticalAlignment="Top" Width="549"/>
+        <Button x:Name="btv" Content="Button" HorizontalAlignment="Left" Margin="275.5,391,0,0" VerticalAlignment="Top" Width="75" Click="Btv_Click"/>
 
     </Grid>
 </Window>

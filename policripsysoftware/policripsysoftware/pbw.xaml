@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
-        Title="pbw" Height="450" Width="769.039" WindowStyle="None">
+        Title="pbw" Height="510" Width="626.667" WindowStyle="None">
     <Grid>
         <Label Content="Pendaftaran Baru" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,51,0,0" Width="300"/>
         <Label Content="Nama" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,109,0,0"/>
