@@ -28,7 +28,6 @@
             <Image Height="85" VerticalAlignment="Top" Width="176.166" Source="logo.jpg" StretchDirection="DownOnly" RenderTransformOrigin="0.494,0.505"/>
         </DockPanel>
         <DockPanel HorizontalAlignment="Left" Height="85" LastChildFill="False" Margin="176,-2,-626.667,0" VerticalAlignment="Top" Width="626.667" Background="Black"/>
-        <StackPanel HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>
