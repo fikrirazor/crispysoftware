@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SQLite;
 using System.IO;
+using System.Windows.Controls;
+using System.Data;
 
 namespace policripsysoftware
 {
@@ -75,6 +77,20 @@ namespace policripsysoftware
                 sqlCommand = "insert into karyawan (no_peg,nama_peg, username, password) VALUES (1, 'admin', 'admin', 'admin');";
                 executeQuery(sqlCommand);
             }
+        }
+        public void showpasien(DataGrid dataGrid)
+        {
+            string dbPath = System.Environment.CurrentDirectory + "\\DB";
+            string dbFilePath = dbPath + "\\poliklinik.db";
+            SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
+            sql_con.Open();
+            SQLiteCommand comm = new SQLiteCommand("Select * From pasien", sql_con);
+            SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
+            DataSet ds = new DataSet();
+            da.Fill(ds);
+            DataTable dt = ds.Tables[0];
+            dataGrid.ItemsSource = dt.AsDataView();
+
         }
     }
 }

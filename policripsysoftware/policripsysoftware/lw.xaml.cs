@@ -16,23 +16,27 @@ namespace policripsysoftware
 {
     /// <summary>
     /// Interaction logic for lw.xaml
+    /// lw=login window
     /// </summary>
     public partial class lw : Window
     {
         
-        pegawai peg = new pegawai();
+        karyawan peg = new karyawan();
         public lw()
         {
             InitializeComponent();
-        }               
-        
-        private void Lb_Click(object sender, RoutedEventArgs e)
+        }
+        public void tutup()
         {
-           
-            
+            Close();
+        }
+
+        private void lb_Click(object sender, RoutedEventArgs e)
+        {
             peg.usr = txtusername.Text;
             peg.pass = txtpassword.Password;
             peg.login();
+            Close();
             
         }
 
@@ -49,5 +53,9 @@ namespace policripsysoftware
             tb.Password = string.Empty;
             tb.GotFocus -= Txtpassword_GotFocus;
         }
+
+     
+
+
     }
 }

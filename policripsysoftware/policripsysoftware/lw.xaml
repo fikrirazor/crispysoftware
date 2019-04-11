@@ -5,12 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
-        Title="lw" Height="450" Width="576" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
-    <Grid Margin="0,0,2,0">
-        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="23" Margin="180,82,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" GotFocus="Txtusername_GotFocus"/>
-        <Button x:Name="lb" Content="Login" HorizontalAlignment="Left" Margin="216,295,0,0" VerticalAlignment="Top" Width="140" Height="31" Click="Lb_Click"/>
-        <CheckBox Content="Ingat Akun?" HorizontalAlignment="Left" Margin="236,243,0,0" VerticalAlignment="Top" Width="120"/>
-        <PasswordBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="180,159,0,0" VerticalAlignment="Top" Width="228" Height="23" Password="Password" GotFocus="Txtpassword_GotFocus"/>
+        Title="lw" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize" WindowStyle="None">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="38" Margin="527,230.5,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" GotFocus="Txtusername_GotFocus" Background="White" BorderBrush="Black" CaretBrush="White" BorderThickness="0 0 0 1"
+                 />
+        <PasswordBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="527,296,0,0" VerticalAlignment="Top" Width="228" Height="38" Password="Password" GotFocus="Txtpassword_GotFocus" Background="{x:Null}" BorderBrush="Black" BorderThickness="0 0 0 1"/>
+        <Label Content="Login&#xA;" HorizontalAlignment="Left" Margin="597.5,131.5,0,0" VerticalAlignment="Top" RenderTransformOrigin="-5.158,-0.385" Width="80" FontWeight="Bold" FontSize="24" Height="44"/>
+        <Button x:Name="lb" Content="LOGIN" HorizontalAlignment="Center" Margin="527,382.5,45,186.5" VerticalAlignment="Center" Width="228" Click="lb_Click" Height="31" FontWeight="Bold" FontSize="20" Foreground="White" BorderBrush="{x:Null}" Background="#FF1B5A9E"/>
+        <DockPanel HorizontalAlignment="Left" Height="600" LastChildFill="False" VerticalAlignment="Top" Width="472.5">
+            <Image Height="600" VerticalAlignment="Top" Width="472" Source="stethoscope.jpg" StretchDirection="UpOnly" Stretch="UniformToFill">
+                <Image.OpacityMask>
+                    <ImageBrush ImageSource="stethoscope.jpg"/>
+                </Image.OpacityMask>
+            </Image>
+        </DockPanel>
 
     </Grid>
 </Window>
