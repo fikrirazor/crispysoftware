@@ -15,8 +15,7 @@ namespace policripsysoftware
         private string nama_peg;
         private string username;
         private string password;
-        string dbPath = System.Environment.CurrentDirectory + "\\DB";
-        string dbFilePath;
+        
        
         public karyawan()
         {
@@ -47,6 +46,8 @@ namespace policripsysoftware
 
         public void login()
         {
+            string dbPath = System.Environment.CurrentDirectory + "\\DB";
+            string dbFilePath;
             dbFilePath = dbPath + "\\poliklinik.db";
             string dbConnectionString = string.Format(@"Data Source={0};Version=3;New=False;Compress=True;Journal Mode=Off", dbFilePath);
             SQLiteConnection sqliteCon = new SQLiteConnection(dbConnectionString, true);
