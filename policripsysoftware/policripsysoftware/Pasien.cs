@@ -62,9 +62,9 @@ namespace policripsysoftware
             {
                 Query.ExecuteNonQuery();
                 MessageBox.Show("Pendaftaran Berhasil!");
-                pbw pbw = new pbw();
+                PendaftaranBaru pbw = new PendaftaranBaru();
                 pbw.Close();
-                pw pw = new pw();
+                MainMenu pw = new MainMenu();
                 pw.Show();
             }
             catch (Exception ex)

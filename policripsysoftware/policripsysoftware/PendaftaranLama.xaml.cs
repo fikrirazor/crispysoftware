@@ -15,12 +15,12 @@ using System.Windows.Shapes;
 namespace policripsysoftware
 {
     /// <summary>
-    /// Interaction logic for plw.xaml
+    /// Interaction logic for PendaftaranLama.xaml
     /// ini adalah pasien lama window digunakan jika ada pasien lama yang ingin mendaftar
     /// </summary>
-    public partial class plw : Window
+    public partial class PendaftaranLama : Window
     {
-        public plw()
+        public PendaftaranLama()
         {
             InitializeComponent();
             DbCreator db = new DbCreator();

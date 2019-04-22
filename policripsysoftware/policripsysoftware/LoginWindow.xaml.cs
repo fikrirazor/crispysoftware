@@ -15,15 +15,20 @@ using System.Windows.Shapes;
 namespace policripsysoftware
 {
     /// <summary>
-    /// Interaction logic for lw.xaml
-    /// lw=login window
+    /// Interaction logic for LoginWindow.xaml
+    /// LoginWindow=login window
     /// </summary>
-    public partial class lw : Window
+    public partial class LoginWindow : Window
     {
         
         karyawan peg = new karyawan();
-        public lw()
+        DbCreator db = new DbCreator();
+        public LoginWindow()
         {
+            db.createDbFile();
+            db.createDbConnection();
+            db.createTables();
+            db.fillTable();
             InitializeComponent();
         }
         public void tutup()

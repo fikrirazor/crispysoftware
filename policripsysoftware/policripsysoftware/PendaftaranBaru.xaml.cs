@@ -18,12 +18,12 @@ using System.Windows.Shapes;
 namespace policripsysoftware
 {
     /// <summary>
-    /// Interaction logic for pbw.xaml
+    /// Interaction logic for PendaftaranBaru.xaml
     /// </summary>
-    public partial class pbw : Window
+    public partial class PendaftaranBaru : Window
     {
         pasien ps = new pasien();
-        public pbw()
+        public PendaftaranBaru()
         {
             InitializeComponent();
         }

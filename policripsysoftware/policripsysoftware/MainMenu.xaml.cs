@@ -15,18 +15,18 @@ using System.Windows.Shapes;
 namespace policripsysoftware
 {
     /// <summary>
-    /// Interaction logic for pw.xaml
+    /// Interaction logic for MainMenu.xaml
     /// </summary>
-    public partial class pw : Window
+    public partial class MainMenu : Window
     {
-        public pw()
+        public MainMenu()
         {
             InitializeComponent();
         }
 
         private void Bb_Click(object sender, RoutedEventArgs e)
         {
-            var p = new pbw();
+            var p = new PendaftaranBaru();
             MainArea.Children.Clear();
 
             object content = p.Content;
@@ -36,7 +36,7 @@ namespace policripsysoftware
 
         private void Bl_Click(object sender, RoutedEventArgs e)
         {
-            var pl = new plw();
+            var pl = new PendaftaranLama();
             MainArea.Children.Clear();
 
             object content = pl.Content;
