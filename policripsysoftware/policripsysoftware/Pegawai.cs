@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace policripsysoftware
 {
-    class karyawan 
+    class Pegawai 
     {
         private int no_peg;
         private string nama_peg;
@@ -17,11 +17,11 @@ namespace policripsysoftware
         private string password;
         
        
-        public karyawan()
+        public Pegawai()
         {
         }
 
-        public karyawan(int no_peg, string nama_peg, string username, string password)
+        public Pegawai(int no_peg, string nama_peg, string username, string password)
         {
             this.no_peg = no_peg;
             this.nama_peg = nama_peg;
