@@ -81,20 +81,19 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DbCreator.cs" />
-    <Compile Include="JenisKelamin.cs" />
     <Compile Include="kpw.xaml.cs">
       <DependentUpon>kpw.xaml</DependentUpon>
     </Compile>
-    <Compile Include="loginwindow.xaml.cs">
-      <DependentUpon>loginwindow.xaml</DependentUpon>
+    <Compile Include="LoginWindow.xaml.cs">
+      <DependentUpon>LoginWindow.xaml</DependentUpon>
     </Compile>
-    <Compile Include="pasien.cs" />
-    <Compile Include="pbw.xaml.cs">
-      <DependentUpon>pbw.xaml</DependentUpon>
+    <Compile Include="Pasien.cs" />
+    <Compile Include="PendaftaranBaru.xaml.cs">
+      <DependentUpon>PendaftaranBaru.xaml</DependentUpon>
     </Compile>
-    <Compile Include="karyawan.cs" />
-    <Compile Include="plw.xaml.cs">
-      <DependentUpon>plw.xaml</DependentUpon>
+    <Compile Include="Pegawai.cs" />
+    <Compile Include="PendaftaranLama.xaml.cs">
+      <DependentUpon>PendaftaranLama.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
@@ -103,7 +102,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="loginwindow.xaml">
+    <Page Include="LoginWindow.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -111,11 +110,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="pbw.xaml">
+    <Page Include="PendaftaranBaru.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="plw.xaml">
+    <Page Include="PendaftaranLama.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -22,7 +22,7 @@ namespace policripsysoftware
     /// </summary>
     public partial class PendaftaranBaru : Window
     {
-        pasien ps = new pasien();
+        Pasien ps = new Pasien();
         public PendaftaranBaru()
         {
             InitializeComponent();
