@@ -81,8 +81,8 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DbCreator.cs" />
-    <Compile Include="kpw.xaml.cs">
-      <DependentUpon>kpw.xaml</DependentUpon>
+    <Compile Include="KelolaPengguna.xaml.cs">
+      <DependentUpon>KelolaPengguna.xaml</DependentUpon>
     </Compile>
     <Compile Include="LoginWindow.xaml.cs">
       <DependentUpon>LoginWindow.xaml</DependentUpon>
@@ -98,7 +98,7 @@
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
     </Compile>
-    <Page Include="kpw.xaml">
+    <Page Include="KelolaPengguna.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

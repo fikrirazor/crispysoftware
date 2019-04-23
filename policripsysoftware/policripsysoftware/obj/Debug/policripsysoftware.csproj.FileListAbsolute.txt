@@ -15,8 +15,6 @@ C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoft
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.xml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.dll.config
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CopyComplete
-C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\kpw.g.cs
-C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\kpw.baml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\loginwindow.g.cs
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\loginwindow.baml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainMenu.g.cs
@@ -25,3 +23,5 @@ C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoft
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranLama.g.cs
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranBaru.baml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranLama.baml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.baml

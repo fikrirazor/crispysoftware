@@ -46,7 +46,7 @@ namespace policripsysoftware
 
         private void Bkp_Click(object sender, RoutedEventArgs e)
         {
-            var kpw = new kpw();
+            var kpw = new KelolaPengguna();
             MainArea.Children.Clear();
 
             object content = kpw.Content;

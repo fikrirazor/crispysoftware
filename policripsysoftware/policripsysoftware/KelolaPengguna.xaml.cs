@@ -17,11 +17,11 @@ using System.Windows.Shapes;
 namespace policripsysoftware
 {
     /// <summary>
-    /// Interaction logic for kpw.xaml
+    /// Interaction logic for KelolaPengguna.xaml
     /// </summary>
-    public partial class kpw : Window
+    public partial class KelolaPengguna : Window
     {
-        public kpw()
+        public KelolaPengguna()
         {
             InitializeComponent();
         }
