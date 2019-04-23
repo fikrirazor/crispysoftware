@@ -40,9 +40,9 @@ namespace policripsysoftware
 
         public void createTables()
         {
-            if (!checkIfExist("karyawan"))
+            if (!checkIfExist("pegawai"))
             {
-                sqlCommand = "CREATE TABLE karyawan(no_peg INTEGER PRIMARY KEY, nama_peg TEXT NOT NULL, username TEXT NOT NULL UNIQUE, password TEXT  NOT NULL);";
+                sqlCommand = "CREATE TABLE pegawai(no_peg INTEGER PRIMARY KEY, nama_peg TEXT NOT NULL, username TEXT NOT NULL UNIQUE, password TEXT  NOT NULL);";
                 executeQuery(sqlCommand);
             }            
         }
@@ -72,9 +72,9 @@ namespace policripsysoftware
 
         public void fillTable()
         {
-            if (!checkIfTableContainsData("karyawan"))
+            if (!checkIfTableContainsData("pegawai"))
             {
-                sqlCommand = "insert into karyawan (no_peg,nama_peg, username, password) VALUES (1, 'admin', 'admin', 'admin');";
+                sqlCommand = "insert into pegawai (no_peg,nama_peg, username, password) VALUES (1, 'admin', 'admin', 'admin');";
                 executeQuery(sqlCommand);
             }
         }

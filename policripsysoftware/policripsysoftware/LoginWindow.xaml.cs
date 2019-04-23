@@ -21,7 +21,7 @@ namespace policripsysoftware
     public partial class LoginWindow : Window
     {
         
-        karyawan peg = new karyawan();
+        Pegawai peg = new Pegawai();
         DbCreator db = new DbCreator();
         public LoginWindow()
         {

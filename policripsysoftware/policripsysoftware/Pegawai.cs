@@ -55,7 +55,7 @@ namespace policripsysoftware
             try
             {
                 sqliteCon.Open();
-                string Query = "select * from karyawan where username='" + usr + "' and password='" + pass + "' ";
+                string Query = "select * from pegawai where username='" + usr + "' and password='" + pass + "' ";
                 SQLiteCommand createCommand = new SQLiteCommand(Query, sqliteCon);
 
                 createCommand.ExecuteNonQuery();

@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace policripsysoftware
 {
-    class pasien
+    class Pasien
     {
         private int nopasien;
         private string nama;
@@ -18,7 +18,7 @@ namespace policripsysoftware
         private string nohp;
         private string noktp;
 
-        public pasien()
+        public Pasien()
         {           
         }
         public int np
