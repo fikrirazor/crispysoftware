@@ -7,8 +7,18 @@
         mc:Ignorable="d"
         Title="kpw" Height="510" Width="626.667">
     <Grid>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="295" Margin="36,47,0,0" VerticalAlignment="Top" Width="549"/>
-        <Button x:Name="btv" Content="Button" HorizontalAlignment="Left" Margin="275.5,391,0,0" VerticalAlignment="Top" Width="75" Click="Btv_Click"/>
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="166" Margin="0,133,0,0" VerticalAlignment="Top" Width="317"/>
+        <Button x:Name="btv" Content="View" HorizontalAlignment="Left" Margin="174,338,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="14,338,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="98,338,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="254,338,0,0" VerticalAlignment="Top" Width="41"/>
+        <Label Content="Pasien" HorizontalAlignment="Left" Margin="139,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808"/>
+        <Label Content="Dokter" HorizontalAlignment="Left" Margin="459,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808"/>
+        <DataGrid Height="166" VerticalAlignment="Top" Margin="314,133,0,0"/>
+        <Button x:Name="btv_Copy" Content="View" HorizontalAlignment="Left" Margin="488,338,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="328,338,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="412,338,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="568,338,0,0" VerticalAlignment="Top" Width="41"/>
 
     </Grid>
 </Window>

@@ -81,6 +81,7 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="DbCreator.cs" />
+    <Compile Include="Dokter.cs" />
     <Compile Include="KelolaPengguna.xaml.cs">
       <DependentUpon>KelolaPengguna.xaml</DependentUpon>
     </Compile>

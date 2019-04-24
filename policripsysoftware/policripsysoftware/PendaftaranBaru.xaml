@@ -7,17 +7,26 @@
         mc:Ignorable="d"
         Title="pbw" Height="510" Width="626.667" WindowStyle="None">
     <Grid>
-        <Label Content="Pendaftaran Baru" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="321,51,0,0" Width="300"/>
-        <Label Content="Nama" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="210,109,0,0"/>
-        <Label Content="No KTP" HorizontalAlignment="Left" Margin="210,158,0,0" VerticalAlignment="Top"/>
-        <Label Content="Jenis Kelamin" HorizontalAlignment="Left" Margin="210,204,0,0" VerticalAlignment="Top"/>
-        <Label Content="Tanggal Lahir" HorizontalAlignment="Left" Margin="210,255,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="namatxt" HorizontalAlignment="Left" Height="23" Margin="358,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="noktptxt" HorizontalAlignment="Left" Height="23" Margin="358,162,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="pbb" Content="Daftar" HorizontalAlignment="Left" Margin="267,367,0,0" VerticalAlignment="Top" Width="263" Click="Pbb_Click" Height="39"/>
-        <TextBox x:Name="nohptxt" HorizontalAlignment="Left" Height="23" Margin="358,307,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <Label Content="No Hp" HorizontalAlignment="Left" Margin="214,303,0,0" VerticalAlignment="Top"/>
-        <DatePicker x:Name="tanggallahirtxt" HorizontalAlignment="Left" Margin="358,257,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Pendaftaran Baru" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="110,10,0,0" Width="106"/>
+        <Label Content="Nama Pasien" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,54,0,0" RenderTransformOrigin="-1.513,-1.462"/>
+        <Label Content="No KTP" HorizontalAlignment="Left" Margin="10,80,0,0" VerticalAlignment="Top"/>
+        <Label Content="Jenis Kelamin" HorizontalAlignment="Left" Margin="10,111,0,0" VerticalAlignment="Top"/>
+        <Label Content="Tanggal Lahir" HorizontalAlignment="Left" Margin="11,142,0,0" VerticalAlignment="Top" RenderTransformOrigin="-1.988,-3.462"/>
+        <TextBox x:Name="namatxt" HorizontalAlignment="Left" Height="23" Margin="110,54,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="noktptxt" HorizontalAlignment="Left" Height="23" Margin="110,85,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="pbb" Content="Daftar" HorizontalAlignment="Left" Margin="35,238,0,0" VerticalAlignment="Top" Width="263" Click="Pbb_Click" Height="39"/>
+        <TextBox x:Name="nohptxt" HorizontalAlignment="Left" Height="23" Margin="110,180,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="No Hp" HorizontalAlignment="Left" Margin="14,173,0,0" VerticalAlignment="Top"/>
+        <DatePicker x:Name="tanggallahirtxt" HorizontalAlignment="Left" Margin="110,151,0,0" VerticalAlignment="Top" Width="120"/>
+        <ComboBox HorizontalAlignment="Left" Margin="110,115,0,0" VerticalAlignment="Top" Width="120">
+            <ComboBoxItem Content="Pria" HorizontalAlignment="Left" Width="118"/>
+            <ComboBoxItem Content="Wanita" HorizontalAlignment="Left" Width="118"/>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" Margin="479,54,0,0" VerticalAlignment="Top" Width="120"/>
+        <Label Content="Dokter" HorizontalAlignment="Left" Margin="375,51,0,0" VerticalAlignment="Top"/>
+        <DockPanel HorizontalAlignment="Left" Height="307" LastChildFill="False" VerticalAlignment="Top" Width="334"/>
+        <DockPanel HorizontalAlignment="Left" Height="307" LastChildFill="False" Margin="339,0,0,0" VerticalAlignment="Top" Width="280"/>
+        <DockPanel HorizontalAlignment="Left" Height="195" LastChildFill="False" Margin="0,307,0,0" VerticalAlignment="Top" Width="619"/>
 
     </Grid>
 </Window>

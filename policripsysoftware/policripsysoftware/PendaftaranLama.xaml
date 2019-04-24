@@ -7,9 +7,10 @@
         mc:Ignorable="d"
         Title="plw" Height="505" Width="626.667">
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="Nama" VerticalAlignment="Top" Width="120" Margin="261,86,0,0"/>
-        <Button x:Name="cb" Content="Cari" HorizontalAlignment="Left" Margin="261,152,0,0" VerticalAlignment="Top" Width="120"/>
-        <DataGrid x:Name="datapasien" HorizontalAlignment="Left" Height="178" Margin="136,203,0,0" VerticalAlignment="Top" Width="344" SelectionChanged="DataGrid_SelectionChanged"/>
+        <DataGrid x:Name="datapasien" HorizontalAlignment="Left" Height="136" Margin="10,23,0,0" VerticalAlignment="Top" Width="599" SelectionChanged="DataGrid_SelectionChanged"/>
+        <Label Content="Dokter" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.192"/>
+        <ComboBox HorizontalAlignment="Left" Margin="84,181,0,0" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Daftar" HorizontalAlignment="Left" Margin="273,366,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
