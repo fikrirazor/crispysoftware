@@ -28,7 +28,13 @@ namespace policripsysoftware
                 SQLiteConnection.CreateFile(dbFilePath);
             }
         }
-
+        public SQLiteConnection sql_con()
+        {
+            string dbPath = System.Environment.CurrentDirectory + "\\DB";
+            string dbFilePath = dbPath + "\\poliklinik.db";
+            SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
+            return sql_con;
+        }
         public string createDbConnection()
         {
             string strCon = string.Format("Data Source={0};", dbFilePath);

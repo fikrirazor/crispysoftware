@@ -74,8 +74,10 @@ namespace policripsysoftware
                 throw new Exception(ex.Message);
             }
         }
+        ///Method untuk menambahkan data pada database
         public void add()
         {
+            
             string dbPath = System.Environment.CurrentDirectory + "\\DB";
             string dbFilePath = dbPath + "\\poliklinik.db";
             SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
@@ -102,13 +104,14 @@ namespace policripsysoftware
 
         public void delete(DataGrid dataGrid)
         {
-            string dbPath = System.Environment.CurrentDirectory + "\\DB";
-            string dbFilePath = dbPath + "\\poliklinik.db";
-            SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
+            DbCreator db = new DbCreator();
+            SQLiteConnection sql_con = db.sql_con();
+            
 
+            sql_con.Open();
             if (dataGrid.SelectedItem == null)
                 return;
-            sql_con.Open();
+            
             foreach(var item in dataGrid.SelectedItems.Cast<DataRowView>())
             {
                 using (SQLiteCommand comm = new SQLiteCommand("DELETE FROM pasien WHERE nopasien=" + item["nopasien"], sql_con))
