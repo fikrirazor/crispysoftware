@@ -19,6 +19,7 @@ namespace policripsysoftware
         //private JenisKelamin jeniskelamin;
         private string nohp;
         private string noktp;
+        DbCreator db = new DbCreator();
 
         public Pasien()
         {           
@@ -66,8 +67,8 @@ namespace policripsysoftware
                 MessageBox.Show("Pendaftaran Berhasil!");
                 PendaftaranBaru pbw = new PendaftaranBaru();
                 pbw.Close();
-                MainMenu pw = new MainMenu();
-                pw.Show();
+                MainMenu MM = new MainMenu();
+                MM.Show();
             }
             catch (Exception ex)
             {
@@ -77,11 +78,10 @@ namespace policripsysoftware
         ///Method untuk menambahkan data pada database
         public void add()
         {
-            
-            string dbPath = System.Environment.CurrentDirectory + "\\DB";
-            string dbFilePath = dbPath + "\\poliklinik.db";
-            SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
+            //melakukan koneksi database
+            SQLiteConnection sql_con = db.sql_con();
             sql_con.Open();
+            //Query SQL untuk menambahkan data pada tabel pasien
             SQLiteCommand Query = new SQLiteCommand("insert into pasien(nama,tanggallahir,nohp,noktp) values(@b,@c,@d,@e)", sql_con);
             Query.Parameters.AddWithValue("@b", nama);
             Query.Parameters.AddWithValue("@c", tanggallahir);
@@ -104,16 +104,15 @@ namespace policripsysoftware
 
         public void delete(DataGrid dataGrid)
         {
-            DbCreator db = new DbCreator();
             SQLiteConnection sql_con = db.sql_con();
-            
-
             sql_con.Open();
             if (dataGrid.SelectedItem == null)
                 return;
             
+            
             foreach(var item in dataGrid.SelectedItems.Cast<DataRowView>())
             {
+                //Query sql untuk menghapus data 
                 using (SQLiteCommand comm = new SQLiteCommand("DELETE FROM pasien WHERE nopasien=" + item["nopasien"], sql_con))
                 {
                     comm.ExecuteNonQuery();
@@ -126,9 +125,7 @@ namespace policripsysoftware
         }
         public void view(DataGrid dataGrid)
         {
-            string dbPath = System.Environment.CurrentDirectory + "\\DB";
-            string dbFilePath = dbPath + "\\poliklinik.db";
-            SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
+            SQLiteConnection sql_con = db.sql_con();
             sql_con.Open();
             SQLiteCommand comm = new SQLiteCommand("Select * From pasien", sql_con);
             SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
