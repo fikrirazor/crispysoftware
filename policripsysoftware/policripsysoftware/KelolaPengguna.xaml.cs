@@ -21,6 +21,8 @@ namespace policripsysoftware
     /// </summary>
     public partial class KelolaPengguna : Window
     {
+        Pasien p = new Pasien();
+
         public KelolaPengguna()
         {
             InitializeComponent();
@@ -32,6 +34,11 @@ namespace policripsysoftware
             db.showpasien(this.dataGrid);
 
              
+        }
+
+        private void DeleteButtonPasien_Click(object sender, RoutedEventArgs e)
+        {
+            p.delete(this.dataGrid);
         }
     }
 }

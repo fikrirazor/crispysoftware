@@ -11,7 +11,7 @@
         <Button x:Name="btv" Content="View" HorizontalAlignment="Left" Margin="174,338,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
         <Button Content="Add" HorizontalAlignment="Left" Margin="14,338,0,0" VerticalAlignment="Top" Width="41"/>
         <Button Content="Edit" HorizontalAlignment="Left" Margin="98,338,0,0" VerticalAlignment="Top" Width="41"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="254,338,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button x:Name="DeleteButtonPasien" Content="Delete" HorizontalAlignment="Left" Margin="254,338,0,0" VerticalAlignment="Top" Width="41" Click="DeleteButtonPasien_Click"/>
         <Label Content="Pasien" HorizontalAlignment="Left" Margin="139,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808"/>
         <Label Content="Dokter" HorizontalAlignment="Left" Margin="459,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808"/>
         <DataGrid Height="166" VerticalAlignment="Top" Margin="314,133,0,0"/>

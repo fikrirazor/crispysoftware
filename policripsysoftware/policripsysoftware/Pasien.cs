@@ -105,14 +105,17 @@ namespace policripsysoftware
             string dbPath = System.Environment.CurrentDirectory + "\\DB";
             string dbFilePath = dbPath + "\\poliklinik.db";
             SQLiteConnection sql_con = new SQLiteConnection(string.Format("Data Source={0};", dbFilePath));
-            sql_con.Open();
 
-            if (dataGrid.SelectedCells.Count == 0)
+            if (dataGrid.SelectedItem == null)
                 return;
-
-            SQLiteCommand comm = new SQLiteCommand("delete from pasien where nopasien= @rownopasien", sql_con);
-            SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
-
+            sql_con.Open();
+            foreach(var item in dataGrid.SelectedItems.Cast<DataRowView>())
+            {
+                using (SQLiteCommand comm = new SQLiteCommand("DELETE FROM pasien WHERE nopasien=" + item["nopasien"], sql_con))
+                {
+                    comm.ExecuteNonQuery();
+                }
+            }
         }
         public void update(DataGrid dataGrid)
         {
