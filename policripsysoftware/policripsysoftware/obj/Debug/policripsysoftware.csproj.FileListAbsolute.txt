@@ -25,3 +25,14 @@ C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoft
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranLama.baml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.g.cs
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.baml
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.exe
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.pdb
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csprojAssemblyReference.cache
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LoginWindow.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranBaru.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranLama.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainMenu.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\App.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware_MarkupCompile.cache
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware_MarkupCompile.lref
