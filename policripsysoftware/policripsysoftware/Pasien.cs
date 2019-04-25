@@ -119,10 +119,18 @@ namespace policripsysoftware
                 }
             }
         }
+        //Method untuk mengupdate data
         public void update(DataGrid dataGrid)
         {
-
+            SQLiteConnection sql_con = db.sql_con();
+            SQLiteCommand Query = new SQLiteCommand("update pasien(nama,tanggallahir,nohp,noktp) values(@b,@c,@d,@e)", sql_con);
+            Query.Parameters.AddWithValue("@b", nama);
+            Query.Parameters.AddWithValue("@c", tanggallahir);
+            Query.Parameters.AddWithValue("@d", nohp);
+            Query.Parameters.AddWithValue("@e", noktp);
+            
         }
+        //Method untuk melihat data
         public void view(DataGrid dataGrid)
         {
             SQLiteConnection sql_con = db.sql_con();
