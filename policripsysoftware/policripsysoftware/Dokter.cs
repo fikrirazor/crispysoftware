@@ -66,7 +66,25 @@ namespace policripsysoftware
         //Method untuk mengupdate data
         public void update()
         {
-
+            SQLiteConnection sql_con = db.sql_con();
+            sql_con.Open();
+            SQLiteCommand Query = new SQLiteCommand("update dokter SET nama_dokter=@b,spesialis=@c WHERE no_dokter = @a;", sql_con);
+            Query.Parameters.AddWithValue("@a", nodokter);
+            Query.Parameters.AddWithValue("@b", namadokter);
+            Query.Parameters.AddWithValue("@c", spes);
+            try
+            {
+                Query.ExecuteNonQuery();
+                MessageBox.Show("Update Berhasil!");
+                KelolaPengguna kp = new KelolaPengguna();
+                kp.Close();
+                MainMenu MM = new MainMenu();
+                MM.Show();
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
         //Method untuk melihat data
         public void view(DataGrid dataGrid)

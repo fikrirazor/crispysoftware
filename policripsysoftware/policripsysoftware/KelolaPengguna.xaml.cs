@@ -27,8 +27,55 @@ namespace policripsysoftware
         public KelolaPengguna()
         {
             InitializeComponent();
+            BindComboBox(doktertxt);
+            BindComboBox2(nopasientxt);
+            BindComboBox3(nodoktertxt);
         }
-        
+        public void BindComboBox(ComboBox comboBoxName)
+        {
+            DbCreator db = new DbCreator();
+            SQLiteConnection sql_con = db.sql_con();
+
+            sql_con.Open();
+            SQLiteCommand comm = new SQLiteCommand("Select nama_dokter From dokter", sql_con);
+            SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "dokter");
+
+            comboBoxName.ItemsSource = ds.Tables[0].DefaultView;
+            comboBoxName.DisplayMemberPath = ds.Tables[0].Columns["nama_dokter"].ToString();
+            comboBoxName.SelectedValuePath = ds.Tables[0].Columns["nama_dokter"].ToString();
+        }
+        public void BindComboBox2(ComboBox comboBoxName)
+        {
+            DbCreator db = new DbCreator();
+            SQLiteConnection sql_con = db.sql_con();
+
+            sql_con.Open();
+            SQLiteCommand comm = new SQLiteCommand("Select no_pasien From pasien", sql_con);
+            SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "pasien");
+
+            comboBoxName.ItemsSource = ds.Tables[0].DefaultView;
+            comboBoxName.DisplayMemberPath = ds.Tables[0].Columns["no_pasien"].ToString();
+            comboBoxName.SelectedValuePath = ds.Tables[0].Columns["no_pasien"].ToString();
+        }
+        public void BindComboBox3(ComboBox comboBoxName)
+        {
+            DbCreator db = new DbCreator();
+            SQLiteConnection sql_con = db.sql_con();
+
+            sql_con.Open();
+            SQLiteCommand comm = new SQLiteCommand("Select no_dokter From dokter", sql_con);
+            SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "dokter");
+
+            comboBoxName.ItemsSource = ds.Tables[0].DefaultView;
+            comboBoxName.DisplayMemberPath = ds.Tables[0].Columns["no_dokter"].ToString();
+            comboBoxName.SelectedValuePath = ds.Tables[0].Columns["no_dokter"].ToString();
+        }
         private void Adddokter_Click(object sender, RoutedEventArgs e)
         {
             d.namadokter=namadoktertxt.Text;
@@ -43,6 +90,9 @@ namespace policripsysoftware
 
         private void Updatedokter_Click(object sender, RoutedEventArgs e)
         {
+            d.nodokter = int.Parse(nodoktertxt.Text);
+            d.namadokter = namadoktertxt.Text;
+            d.spes = spesialistxt.Text;
             d.update();
         }
 
@@ -74,6 +124,13 @@ namespace policripsysoftware
 
         private void Updatepasien_Click(object sender, RoutedEventArgs e)
         {
+            p.nopasien = int.Parse(nopasientxt.Text);
+            p.namapasien = namatxt.Text;
+            p.tanggallahir = tanggallahirtxt.Text;
+            p.gen = Jenisklamintxt.Text;
+            p.np = nohptxt.Text;
+            p.ala = alamattxt.Text;
+            p.dokternm = doktertxt.Text;
             p.update();
         }
     }

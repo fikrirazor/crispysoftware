@@ -17,23 +17,25 @@
             <Label Content="Dokter" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808" FontWeight="Bold" Foreground="White"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="162" Margin="0,83,0,0">
-            <Label Content="Nama Pasien" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,0,10" Width="100" Height="25"/>
-            <Label Content="Tanggal Lahir" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.988,-3.462" Foreground="White" Margin="40,0,0,10" Width="100" Height="25"/>
-            <Label Content="Jenis Kelamin" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" Width="100" Height="25" RenderTransformOrigin="0.467,0.143"/>
-            <Label Content="No Hp" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" Width="100" Height="26"/>
-            <Label Content="Alamat" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" Width="100" Height="26"/>
-            <Label Content="Dokter" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" Width="100" Height="25"/>
+            <Label Content="No Pasien" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,0,10" Width="102" Height="20" FontSize="8"/>
+            <Label Content="Nama Pasien" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,0,10" Width="102" Height="20" FontSize="8"/>
+            <Label Content="Tanggal Lahir" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.988,-3.462" Foreground="White" Margin="40,0,0,10" Width="102" Height="20" FontSize="8"/>
+            <Label Content="Jenis Kelamin" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" Width="102" Height="19" RenderTransformOrigin="0.467,0.143" FontSize="8"/>
+            <Label Content="No Hp" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" Width="102" Height="20" FontSize="8"/>
+            <Label Content="Alamat" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" Width="102" Height="21" FontSize="8"/>
+            <Label Content="Dokter" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" Width="102" Height="20" FontSize="8"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="152" Margin="162,83,0,0">
-            <TextBox x:Name="namatxt" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" Margin="40,0,0,10"/>
-            <DatePicker x:Name="tanggallahirtxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="40,0,0,10" Height="24"/>
-            <ComboBox x:Name="Jenisklamintxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="40,0,0,10" Height="24">
+            <ComboBox x:Name="nopasientxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="40,0,0,10" Height="20"/>
+            <TextBox x:Name="namatxt" Height="21" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" HorizontalAlignment="Left" Margin="40,0,0,10"/>
+            <DatePicker x:Name="tanggallahirtxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="40,0,0,10" Height="20"/>
+            <ComboBox x:Name="Jenisklamintxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="40,0,0,10" Height="20">
                 <ComboBoxItem Content="Pria" HorizontalAlignment="Left" Width="118"/>
                 <ComboBoxItem Content="Wanita" HorizontalAlignment="Left" Width="118"/>
             </ComboBox>
-            <TextBox x:Name="nohptxt" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Margin="40,0,0,10"/>
-            <TextBox x:Name="alamattxt" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Margin="40,0,0,10"/>
-            <ComboBox x:Name="doktertxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="40,0,0,10" Height="24"/>
+            <TextBox x:Name="nohptxt" HorizontalAlignment="Left" Height="20" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" Margin="40,0,0,10"/>
+            <TextBox x:Name="alamattxt" HorizontalAlignment="Left" Height="19" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" Margin="40,0,0,10"/>
+            <ComboBox x:Name="doktertxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="102" Margin="40,0,0,10" Height="21"/>
         </StackPanel>
 
         <DataGrid x:Name="datapasiengrid" HorizontalAlignment="Left" Height="109" Margin="-3,304,0,0" VerticalAlignment="Top" Width="298"/>
@@ -47,10 +49,12 @@
         <Button x:Name="updatedokter" Content="Update" HorizontalAlignment="Left" Margin="411.667,440,0,0" VerticalAlignment="Top" Width="41" Click="Updatedokter_Click"/>
         <Button x:Name="deletedokter" Content="Delete" HorizontalAlignment="Left" Margin="567.667,440,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.366,5.21" Click="Deletedokter_Click"/>
         <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="138.667" Margin="314,83,0,0">
+            <Label Content="No Dokter" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,-1,10" Width="100" Height="25"/>
             <Label Content="Nama Dokter" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,-1,10" Width="100" Height="25"/>
             <Label Content="Spesialis" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.988,-3.462" Foreground="White" Margin="40,0,-1,10" Width="100" Height="25"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="161" Margin="457.667,83,0,0">
+            <ComboBox x:Name="nodoktertxt" Margin="40,0,21,10"/>
             <TextBox x:Name="namadoktertxt" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" Margin="40,0,0,10"/>
             <TextBox x:Name="spesialistxt" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Margin="40,0,0,10"/>
         </StackPanel>
