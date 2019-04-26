@@ -89,6 +89,9 @@ namespace policripsysoftware
             Query.Parameters.AddWithValue("@e", np);
             Query.Parameters.AddWithValue("@f", ala);
 
+
+            ///tes
+
         }
         //Method untuk melihat data
         public void view(DataGrid dataGrid)

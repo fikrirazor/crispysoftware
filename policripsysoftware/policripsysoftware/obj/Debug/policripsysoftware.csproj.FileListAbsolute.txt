@@ -55,6 +55,6 @@ C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoft
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LoginWindow.baml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainMenu.baml
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\Pendaftaran.g.cs
-C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\Transaksi.g.cs
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\Pendaftaran.baml
-C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\Transaksi.baml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\TransaksiWindow.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\TransaksiWindow.baml
