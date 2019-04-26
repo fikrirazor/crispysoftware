@@ -29,8 +29,10 @@ namespace policripsysoftware
             //melakukan koneksi database
             SQLiteConnection sql_con = db.sql_con();
             sql_con.Open();
-            //Query SQL untuk menambahkan data pada tabel pasien
-            SQLiteCommand Query = new SQLiteCommand("insert into transaksi(tanggal_transaksi,total_biaya,riwayat,pasien) values(@b,@c,@d,@e)", sql_con);
+            if (!(tanggaltransaksi == String.Empty || riw == String.Empty || pasiennm == String.Empty))
+            {
+                //Query SQL untuk menambahkan data pada tabel pasien
+                SQLiteCommand Query = new SQLiteCommand("insert into transaksi(tanggal_transaksi,total_biaya,riwayat,pasien) values(@b,@c,@d,@e)", sql_con);
             Query.Parameters.AddWithValue("@b", tanggaltransaksi);
             Query.Parameters.AddWithValue("@c", totalbiaya);
             Query.Parameters.AddWithValue("@d", riw);
@@ -41,12 +43,17 @@ namespace policripsysoftware
                 MessageBox.Show("Berhasil ditambahklan!");
                 TransaksiWindow tw = new TransaksiWindow();
                 tw.Close();
-                MainMenu MM = new MainMenu();
-                MM.Show();
+               
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+            }
+            else
+            {
+                MessageBox.Show("Data tidak boleh Kosong!");
+                
             }
         }
         
@@ -61,6 +68,7 @@ namespace policripsysoftware
             da.Fill(ds);
             DataTable dt = ds.Tables[0];
             dataGrid.ItemsSource = dt.AsDataView();
+            MessageBox.Show("Data Disegarkan!");
         }
     }
 }

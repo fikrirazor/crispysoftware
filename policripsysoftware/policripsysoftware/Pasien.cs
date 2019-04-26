@@ -54,8 +54,7 @@ namespace policripsysoftware
                 {
                     Query.ExecuteNonQuery();
                     MessageBox.Show("Berhasil!");
-                    MainMenu MM = new MainMenu();
-                    MM.Show();
+                    
                 }
                 catch (Exception ex)
                 {
@@ -63,6 +62,7 @@ namespace policripsysoftware
                 }
             }else{
                 MessageBox.Show("Data tidak boleh Kosong!");
+               
             }
         }
 
@@ -101,8 +101,7 @@ namespace policripsysoftware
                 MessageBox.Show("Update Berhasil!");
                 KelolaPengguna kp = new KelolaPengguna();
                 kp.Close();
-                MainMenu MM = new MainMenu();
-                MM.Show();
+                
             }
             catch (Exception ex)
             {
@@ -121,6 +120,7 @@ namespace policripsysoftware
             da.Fill(ds);
             DataTable dt = ds.Tables[0];
             dataGrid.ItemsSource = dt.AsDataView();
+            MessageBox.Show("Data Disegarkan!");
         }
 
 

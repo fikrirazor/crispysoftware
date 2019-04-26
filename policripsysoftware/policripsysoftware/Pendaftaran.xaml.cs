@@ -31,6 +31,7 @@ namespace policripsysoftware
             BindComboBox(doktertxt);
         }
 
+        // Isi ComboBox  
         public void BindComboBox(ComboBox comboBoxName)
         {
             DbCreator db = new DbCreator();
@@ -61,13 +62,16 @@ namespace policripsysoftware
             
         }
 
+       
         private void Nohptxt_TextChanged(object sender, TextChangedEventArgs e)
         {
-            if (System.Text.RegularExpressions.Regex.IsMatch(nohptxt.Text, "^(^\\+62\\s?|^0)(\\d{3,4}-?){2}\\d{3,4}$"))
-        {
-            MessageBox.Show("Format salah Contoh : 085641910342.");
-            nohptxt.Text = nohptxt.Text.Remove(nohptxt.Text.Length - 1);
-        }
+            //Validasi no hp
+
+            if (System.Text.RegularExpressions.Regex.IsMatch(nohptxt.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Maaf Masukan Hanya Angka");
+                nohptxt.Text = nohptxt.Text.Remove(nohptxt.Text.Length - 1);
+            }
         }
     }
 }

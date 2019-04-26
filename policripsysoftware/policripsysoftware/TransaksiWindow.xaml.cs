@@ -46,6 +46,7 @@ namespace policripsysoftware
         }
         private void Input_Transaksi_Click(object sender, RoutedEventArgs e)
         {
+            
             ts.tanggaltransaksi = tanggaltransaksitxt.Text;
             double textBoxValue = double.Parse(hargatxt.Text);
             ts.totalbiaya = textBoxValue;
