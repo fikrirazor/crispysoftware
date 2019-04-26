@@ -5,12 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
-        Title="plw" Height="505" Width="626.667">
-    <Grid>
-        <DataGrid x:Name="datapasien" HorizontalAlignment="Left" Height="136" Margin="10,23,0,0" VerticalAlignment="Top" Width="599" SelectionChanged="DataGrid_SelectionChanged"/>
-        <Label Content="Dokter" HorizontalAlignment="Left" Margin="10,177,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.158,-0.192"/>
-        <ComboBox HorizontalAlignment="Left" Margin="84,181,0,0" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Daftar" HorizontalAlignment="Left" Margin="273,366,0,0" VerticalAlignment="Top" Width="75"/>
+        Title="plw" Height="505" Width="626.667" WindowStyle="None">
+    <Grid Background="Black">
+        <DockPanel HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="618.667">
+            <Label Content="Transaksi" HorizontalAlignment="Center" VerticalAlignment="Center" Width="89" Margin="0,10" Height="37" Foreground="White" FontSize="20"/>
+        </DockPanel>
+        <StackPanel HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="212.667" Margin="0,62,0,0">
+            <Label Content="Pasien" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="Harga Periksa" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="Tanggal Transaksi" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.988,-3.462" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="Riwayat" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+        </StackPanel>
+        <StackPanel Margin="212.667,62,0,118" Orientation="Vertical">
+            <ComboBox x:Name="pasientxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
+            <TextBox x:Name="hargatxt" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="40,0,0,10"/>
+            <DatePicker x:Name="tanggaltransaksi" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
+            <RichTextBox x:Name="Riwayattxt" Height="93" Margin="40,0,22,0">
+                <FlowDocument/>
+            </RichTextBox>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="113" Margin="0,361,0,0" VerticalAlignment="Top" Width="618.667">
+            <Button x:Name="Input_Transaksi" Content="Input Transaksi" HorizontalAlignment="Center" Width="263" Height="39" Margin="0,50,0,0" Background="White" Foreground="Black" FontSize="22" FontWeight="Bold"/>
+        </StackPanel>
 
     </Grid>
 </Window>

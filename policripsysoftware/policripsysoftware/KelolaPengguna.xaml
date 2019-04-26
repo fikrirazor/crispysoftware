@@ -6,19 +6,31 @@
         xmlns:local="clr-namespace:policripsysoftware"
         mc:Ignorable="d"
         Title="kpw" Height="510" Width="626.667">
-    <Grid>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="166" Margin="0,133,0,0" VerticalAlignment="Top" Width="317"/>
-        <Button x:Name="btv" Content="View" HorizontalAlignment="Left" Margin="174,338,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="14,338,0,0" VerticalAlignment="Top" Width="41"/>
-        <Button Content="Edit" HorizontalAlignment="Left" Margin="98,338,0,0" VerticalAlignment="Top" Width="41"/>
-        <Button x:Name="DeleteButtonPasien" Content="Delete" HorizontalAlignment="Left" Margin="254,338,0,0" VerticalAlignment="Top" Width="41" Click="DeleteButtonPasien_Click"/>
-        <Label Content="Pasien" HorizontalAlignment="Left" Margin="139,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808"/>
-        <Label Content="Dokter" HorizontalAlignment="Left" Margin="459,42,0,0" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808"/>
-        <DataGrid Height="166" VerticalAlignment="Top" Margin="314,133,0,0"/>
-        <Button x:Name="btv_Copy" Content="View" HorizontalAlignment="Left" Margin="488,338,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="328,338,0,0" VerticalAlignment="Top" Width="41"/>
-        <Button Content="Edit" HorizontalAlignment="Left" Margin="412,338,0,0" VerticalAlignment="Top" Width="41"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="568,338,0,0" VerticalAlignment="Top" Width="41"/>
+    <Grid Background="Black">
+        <DockPanel HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="618.667">
+            <Label Content="Kelola Pengguna" HorizontalAlignment="Center" VerticalAlignment="Center" Width="159" Margin="0,10" Height="37" Foreground="White" FontSize="20"/>
+        </DockPanel>
+        <StackPanel HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="295" Margin="0,57,0,0">
+            <Label Content="Pasien" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808" FontWeight="Bold" Foreground="White"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="26" VerticalAlignment="Top" Width="323.667" Margin="295,57,0,0">
+            <Label Content="Dokter" HorizontalAlignment="Center" VerticalAlignment="Top" RenderTransformOrigin="3.789,0.808" FontWeight="Bold" Foreground="White"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="162" Margin="0,83,0,0"/>
+        <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="152" Margin="162,83,0,0"/>
+
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Height="109" Margin="-3,304,0,0" VerticalAlignment="Top" Width="298"/>
+        <Button x:Name="btv" Content="View" HorizontalAlignment="Left" Margin="174,440,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="14,440,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="98,440,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button x:Name="DeleteButtonPasien" Content="Delete" HorizontalAlignment="Left" Margin="254,440,0,0" VerticalAlignment="Top" Width="41" Click="DeleteButtonPasien_Click"/>
+        <DataGrid Height="109" VerticalAlignment="Top" Margin="327.667,304,0,0"/>
+        <Button x:Name="btv_Copy" Content="View" HorizontalAlignment="Left" Margin="487.667,440,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
+        <Button Content="Add" HorizontalAlignment="Left" Margin="327.667,440,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button Content="Edit" HorizontalAlignment="Left" Margin="411.667,440,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button Content="Delete" HorizontalAlignment="Left" Margin="567.667,440,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.366,5.21"/>
+        <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="138.667" Margin="314,83,0,0"/>
+        <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="161" Margin="457.667,83,0,0"/>
 
     </Grid>
 </Window>

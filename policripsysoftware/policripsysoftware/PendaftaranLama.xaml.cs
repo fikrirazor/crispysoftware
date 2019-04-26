@@ -23,13 +23,9 @@ namespace policripsysoftware
         public PendaftaranLama()
         {
             InitializeComponent();
-            DbCreator db = new DbCreator();
-            db.showpasien(this.datapasien);
         }
 
-        private void DataGrid_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
 
-        }
+       
     }
 }
