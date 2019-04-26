@@ -64,7 +64,7 @@ namespace policripsysoftware
             }
         }
         //Method untuk mengupdate data
-        public void update(DataGrid dataGrid)
+        public void update()
         {
 
         }

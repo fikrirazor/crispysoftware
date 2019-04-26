@@ -28,23 +28,53 @@ namespace policripsysoftware
         {
             InitializeComponent();
         }
-
-        private void Btv_Click(object sender, RoutedEventArgs e)
-        {
-            DbCreator db = new DbCreator();
-            db.showpasien(this.dataGrid);             
-        }
-
-        private void DeleteButtonPasien_Click(object sender, RoutedEventArgs e)
-        {
-            p.delete(this.dataGrid);
-        }
-
+        
         private void Adddokter_Click(object sender, RoutedEventArgs e)
         {
             d.namadokter=namadoktertxt.Text;
             d.spes=spesialistxt.Text;
             d.add();
+        }
+
+        private void Viewdokter_Click(object sender, RoutedEventArgs e)
+        {
+            d.view(datagriddokter);
+        }
+
+        private void Updatedokter_Click(object sender, RoutedEventArgs e)
+        {
+            d.update();
+        }
+
+        private void Deletedokter_Click(object sender, RoutedEventArgs e)
+        {
+            d.delete(datagriddokter);
+        }
+
+        private void Addpasien_Click(object sender, RoutedEventArgs e)
+        {
+            p.namapasien = namatxt.Text;
+            p.tanggallahir = tanggallahirtxt.Text;
+            p.gen = Jenisklamintxt.Text;
+            p.np = nohptxt.Text;
+            p.ala = alamattxt.Text;
+            p.dokternm = doktertxt.Text;
+            p.add();
+        }
+
+        private void viewpasien(object sender, RoutedEventArgs e)
+        {
+            DbCreator db = new DbCreator();
+            db.showpasien(datapasiengrid);
+        }
+        private void DeleteButtonPasien_Click(object sender, RoutedEventArgs e)
+        {
+            p.delete(datapasiengrid);
+        }
+
+        private void Updatepasien_Click(object sender, RoutedEventArgs e)
+        {
+            p.update();
         }
     }
 }

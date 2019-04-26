@@ -81,7 +81,7 @@ namespace policripsysoftware
             }
         }
         //Method untuk mengupdate data
-        public void update(DataGrid dataGrid)
+        public void update()
         {
             SQLiteConnection sql_con = db.sql_con();
             SQLiteCommand Query = new SQLiteCommand("update pasien(nama,tanggallahir,nohp,noktp) values(@b,@c,@d,@e)", sql_con);
