@@ -15,15 +15,15 @@ namespace policripsysoftware
     {
         private int no_transaksi;
         private string tanggal_transaksi;
-        private float total_biaya;
+        private double total_biaya;
         private string riwayat;
         Pasien pasien = new Pasien();
         DbCreator db = new DbCreator();
         public int notransaksi { get { return no_transaksi; } set { no_transaksi = value; } }
         public string tanggaltransaksi { get { return tanggal_transaksi; } set { tanggal_transaksi = value; } }
-        public float totalbiaya { get { return total_biaya; } set { total_biaya = value; } }
+        public double totalbiaya { get { return total_biaya; } set { total_biaya = value; } }
         public string riw { get { return riwayat; } set { riwayat = value; } }
-
+        public string pasiennm { get { return pasien.namapasien; } set { pasien.namapasien = value; } }
         public void add()
         {
             //melakukan koneksi database
@@ -34,7 +34,7 @@ namespace policripsysoftware
             Query.Parameters.AddWithValue("@b", tanggaltransaksi);
             Query.Parameters.AddWithValue("@c", totalbiaya);
             Query.Parameters.AddWithValue("@d", riw);
-            Query.Parameters.AddWithValue("@e", pasien.namapasien);
+            Query.Parameters.AddWithValue("@e", pasiennm);
             try
             {
                 Query.ExecuteNonQuery();

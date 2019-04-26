@@ -62,7 +62,7 @@ namespace policripsysoftware
             p.add();
         }
 
-        private void viewpasien(object sender, RoutedEventArgs e)
+        private void viewpasien_Click(object sender, RoutedEventArgs e)
         {
             DbCreator db = new DbCreator();
             db.showpasien(datapasiengrid);
