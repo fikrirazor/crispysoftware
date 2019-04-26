@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SQLite;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -26,9 +28,27 @@ namespace policripsysoftware
         public Pendaftaran()
         {
             InitializeComponent();
+            BindComboBox(doktertxt);
         }
 
-        private void Pbb_Click(object sender, RoutedEventArgs e)
+        public void BindComboBox(ComboBox comboBoxName)
+        {
+            DbCreator db = new DbCreator();
+            SQLiteConnection sql_con = db.sql_con();
+
+            sql_con.Open();
+            SQLiteCommand comm = new SQLiteCommand("Select nama_dokter From dokter", sql_con);
+            SQLiteDataAdapter da = new SQLiteDataAdapter(comm);
+            DataSet ds = new DataSet();
+            da.Fill(ds, "dokter");
+
+            comboBoxName.ItemsSource = ds.Tables[0].DefaultView;
+            comboBoxName.DisplayMemberPath = ds.Tables[0].Columns["nama_dokter"].ToString();
+            comboBoxName.SelectedValuePath = ds.Tables[0].Columns["nama_dokter"].ToString();
+        }
+    
+
+    private void Pbb_Click(object sender, RoutedEventArgs e)
         {
             ps.namapasien = namatxt.Text;
             ps.tanggallahir = tanggallahirtxt.Text;
@@ -38,6 +58,18 @@ namespace policripsysoftware
             ps.add();
                         
             
+        }
+
+        private void Doktertxt_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+                
+
+
+
+
+
+
         }
     }
 }

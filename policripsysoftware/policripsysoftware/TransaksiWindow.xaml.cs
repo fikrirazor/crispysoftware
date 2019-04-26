@@ -28,8 +28,8 @@ namespace policripsysoftware
 
         private void Input_Transaksi_Click(object sender, RoutedEventArgs e)
         {
-            ts.tanggaltransaksi = hargatxt ;
-            ts.totalbiaya = tanggaltransaksitxt;
+            ts.tanggaltransaksi = tanggaltransaksitxt.Text;
+            //ts.totalbiaya = hargatxt.Text;
             ts.add();
         }
     }
