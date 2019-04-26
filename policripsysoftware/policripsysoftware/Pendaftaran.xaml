@@ -14,21 +14,21 @@
 
         <StackPanel HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="212.667" Margin="0,62,0,0">
             <Label Content="Nama Pasien" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
-            <Label Content="No KTP" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
-            <Label Content="Jenis Kelamin" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
             <Label Content="Tanggal Lahir" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.988,-3.462" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="Jenis Kelamin" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35" RenderTransformOrigin="0.467,0.143"/>
             <Label Content="No Hp" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="Alamat" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
             <Label Content="Dokter" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
         </StackPanel>
         <StackPanel Margin="212.667,62,0,146" Orientation="Vertical">
             <TextBox x:Name="namatxt" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" HorizontalAlignment="Left" Margin="40,0,0,10"/>
-            <TextBox x:Name="noktptxt" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="40,0,0,10"/>
+            <DatePicker x:Name="tanggallahirtxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
             <ComboBox x:Name="Jenisklamintxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35">
                 <ComboBoxItem Content="Pria" HorizontalAlignment="Left" Width="118"/>
                 <ComboBoxItem Content="Wanita" HorizontalAlignment="Left" Width="118"/>
             </ComboBox>
-            <DatePicker x:Name="tanggallahirtxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
             <TextBox x:Name="nohptxt" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="40,0,0,10"/>
+            <TextBox x:Name="alamattxt" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="40,0,0,10"/>
             <ComboBox x:Name="doktertxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="141" Margin="0,361,0,0" VerticalAlignment="Top" Width="618.667">

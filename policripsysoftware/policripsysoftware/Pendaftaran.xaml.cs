@@ -30,11 +30,12 @@ namespace policripsysoftware
 
         private void Pbb_Click(object sender, RoutedEventArgs e)
         {
-            ps.nm = namatxt.Text;
-            ps.nk = noktptxt.Text;
-            ps.nh = nohptxt.Text;
-            ps.tl = tanggallahirtxt.SelectedDate.ToString();
-            ps.mendaftar();
+            ps.namapasien = namatxt.Text;
+            ps.tanggallahir = tanggallahirtxt.Text;
+            ps.gen = Jenisklamintxt.Text;
+            ps.np = nohptxt.Text ;
+            ps.ala = alamattxt.Text;
+            ps.add();
                         
             
         }

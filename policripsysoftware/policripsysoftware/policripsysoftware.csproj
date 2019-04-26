@@ -95,12 +95,12 @@
     </Compile>
     <Compile Include="Pasien.cs" />
     <Compile Include="PasienTest.cs" />
-    <Compile Include="PendaftaranBaru.xaml.cs">
-      <DependentUpon>PendaftaranBaru.xaml</DependentUpon>
+    <Compile Include="Pendaftaran.xaml.cs">
+      <DependentUpon>Pendaftaran.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pegawai.cs" />
-    <Compile Include="PendaftaranLama.xaml.cs">
-      <DependentUpon>PendaftaranLama.xaml</DependentUpon>
+    <Compile Include="Transaksi.xaml.cs">
+      <DependentUpon>Transaksi.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
@@ -117,11 +117,11 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="PendaftaranBaru.xaml">
+    <Page Include="Pendaftaran.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="PendaftaranLama.xaml">
+    <Page Include="Transaksi.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
