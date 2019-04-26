@@ -19,6 +19,7 @@ namespace policripsysoftware
         private string gender;
         private string nohp;
         private string alamat;
+        private Dokter dokter;
      
         DbCreator db = new DbCreator();
 
@@ -40,12 +41,13 @@ namespace policripsysoftware
             SQLiteConnection sql_con = db.sql_con();
             sql_con.Open();
             //Query SQL untuk menambahkan data pada tabel pasien
-            SQLiteCommand Query = new SQLiteCommand("insert into pasien(nama_pasien,tanggal_lahir,gender,nohp,alamat) values(@b,@c,@d,@e,@f)", sql_con);
+            SQLiteCommand Query = new SQLiteCommand("insert into pasien(nama_pasien,tanggal_lahir,gender,nohp,alamat,dokter) values(@b,@c,@d,@e,@f,@g)", sql_con);
             Query.Parameters.AddWithValue("@b", namapasien);
             Query.Parameters.AddWithValue("@c", tanggallahir);
             Query.Parameters.AddWithValue("@d", gen);
             Query.Parameters.AddWithValue("@e", np);
             Query.Parameters.AddWithValue("@f", ala);
+            Query.Parameters.AddWithValue("@g", dokter.namadokter);
             try
             {
                 Query.ExecuteNonQuery();

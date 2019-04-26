@@ -44,28 +44,7 @@ namespace policripsysoftware
                 throw new Exception(ex.Message);
             }
         }
-        public void delete(DataGrid dataGrid)
-        {
-            SQLiteConnection sql_con = db.sql_con();
-            sql_con.Open();
-            if (dataGrid.SelectedItem == null)
-                return;
-
-
-            foreach (var item in dataGrid.SelectedItems.Cast<DataRowView>())
-            {
-                //Query sql untuk menghapus data 
-                using (SQLiteCommand comm = new SQLiteCommand("DELETE FROM transaksi WHERE no_transaksi=" + item["no_transaksi"], sql_con))
-                {
-                    comm.ExecuteNonQuery();
-                }
-            }
-        }
-        //Method untuk mengupdate data
-        public void update(DataGrid dataGrid)
-        {
-
-        }
+        
         //Method untuk melihat data
         public void view(DataGrid dataGrid)
         {

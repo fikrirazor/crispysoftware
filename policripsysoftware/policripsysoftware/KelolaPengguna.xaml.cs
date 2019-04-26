@@ -31,9 +31,7 @@ namespace policripsysoftware
         private void Btv_Click(object sender, RoutedEventArgs e)
         {
             DbCreator db = new DbCreator();
-            db.showpasien(this.dataGrid);
-
-             
+            db.showpasien(this.dataGrid);             
         }
 
         private void DeleteButtonPasien_Click(object sender, RoutedEventArgs e)
@@ -41,9 +39,6 @@ namespace policripsysoftware
             p.delete(this.dataGrid);
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
+        
     }
 }

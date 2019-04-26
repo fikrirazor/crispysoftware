@@ -127,6 +127,7 @@ namespace policripsysoftware
         }
 
         internal System.Windows.Controls.DatePicker tanggaltransaksitxt;
+        internal System.Windows.Controls.DataGrid transaksidata;
     }
 }
 
