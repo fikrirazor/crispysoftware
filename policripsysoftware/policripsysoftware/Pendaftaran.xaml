@@ -1,0 +1,39 @@
+﻿<Window x:Class="policripsysoftware.Pendaftaran"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:policripsysoftware"
+        mc:Ignorable="d"
+        Title="pbw" Height="510" Width="626.667" WindowStyle="None">
+    <Grid Background="Black">
+
+        <DockPanel HorizontalAlignment="Left" Height="57" VerticalAlignment="Top" Width="618.667">
+            <Label Content="Pendaftaran Pasien" HorizontalAlignment="Center" VerticalAlignment="Center" Width="179" Margin="0,10" Height="37" Foreground="White" FontSize="20"/>
+        </DockPanel>
+
+        <StackPanel HorizontalAlignment="Left" Height="294" VerticalAlignment="Top" Width="212.667" Margin="0,62,0,0">
+            <Label Content="Nama Pasien" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="No KTP" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="Jenis Kelamin" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="Tanggal Lahir" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.988,-3.462" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="No Hp" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+            <Label Content="Dokter" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="40,0,0,10" FontSize="16" Width="150" Height="35"/>
+        </StackPanel>
+        <StackPanel Margin="212.667,62,0,146" Orientation="Vertical">
+            <TextBox x:Name="namatxt" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" HorizontalAlignment="Left" Margin="40,0,0,10"/>
+            <TextBox x:Name="noktptxt" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="40,0,0,10"/>
+            <ComboBox x:Name="Jenisklamintxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35">
+                <ComboBoxItem Content="Pria" HorizontalAlignment="Left" Width="118"/>
+                <ComboBoxItem Content="Wanita" HorizontalAlignment="Left" Width="118"/>
+            </ComboBox>
+            <DatePicker x:Name="tanggallahirtxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
+            <TextBox x:Name="nohptxt" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="40,0,0,10"/>
+            <ComboBox x:Name="doktertxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="141" Margin="0,361,0,0" VerticalAlignment="Top" Width="618.667">
+            <Button x:Name="pbb" Content="Daftar" HorizontalAlignment="Center" Width="263" Click="Pbb_Click" Height="39" Margin="0,50,0,0" Background="White" Foreground="Black" FontSize="22" FontWeight="Bold"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

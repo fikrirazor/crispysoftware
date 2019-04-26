@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\App.xaml
-5931273920
+5594965477
 
-18-1171225814
+18-31350265
 15-693411785
-KelolaPengguna.xaml;LoginWindow.xaml;PendaftaranBaru.xaml;PendaftaranLama.xaml;MainMenu.xaml;
+KelolaPengguna.xaml;LoginWindow.xaml;Pendaftaran.xaml;Transaksi.xaml;MainMenu.xaml;
 
-False
+True
 

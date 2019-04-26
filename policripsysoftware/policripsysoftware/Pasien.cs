@@ -65,7 +65,7 @@ namespace policripsysoftware
             {
                 Query.ExecuteNonQuery();
                 MessageBox.Show("Pendaftaran Berhasil!");
-                PendaftaranBaru pbw = new PendaftaranBaru();
+                Pendaftaran pbw = new Pendaftaran();
                 pbw.Close();
                 MainMenu MM = new MainMenu();
                 MM.Show();
@@ -91,7 +91,7 @@ namespace policripsysoftware
             {
                 Query.ExecuteNonQuery();
                 MessageBox.Show("Pendaftaran Berhasil!");
-                PendaftaranBaru pbw = new PendaftaranBaru();
+                Pendaftaran pbw = new Pendaftaran();
                 pbw.Close();
                 MainMenu pw = new MainMenu();
                 pw.Show();

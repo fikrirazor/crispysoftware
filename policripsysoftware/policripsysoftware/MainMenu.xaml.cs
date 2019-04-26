@@ -26,7 +26,7 @@ namespace policripsysoftware
 
         private void Bb_Click(object sender, RoutedEventArgs e)
         {
-            var p = new PendaftaranBaru();
+            var p = new Pendaftaran();
             MainArea.Children.Clear();
 
             object content = p.Content;
@@ -36,7 +36,7 @@ namespace policripsysoftware
 
         private void Bl_Click(object sender, RoutedEventArgs e)
         {
-            var pl = new PendaftaranLama();
+            var pl = new TransaksiWindow();
             MainArea.Children.Clear();
 
             object content = pl.Content;
