@@ -18,9 +18,9 @@
             </Image>
         </DockPanel>
         <Grid Height="470.5" VerticalAlignment="Top" Opacity="0.9" Background="#FF0B0B13" Margin="223,58.5,224.5,0">
-            <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="38" Margin="66.75,187,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" GotFocus="Txtusername_GotFocus" Background="White" BorderBrush="Black" CaretBrush="White" BorderThickness="0 0 0 1" FontSize="20" Foreground="#FF0E0E16"
+            <TextBox x:Name="txtusername" HorizontalAlignment="Left" Height="38" Margin="66.75,187,0,0" TextWrapping="Wrap" Text="Username" VerticalAlignment="Top" Width="228" GotFocus="Txtusername_GotFocus" Background="White" BorderBrush="Black" CaretBrush="White" BorderThickness="0 0 0 1" FontSize="20" Foreground="#FF0E0E16" KeyUp="txtusername_keyup"
                  />
-            <PasswordBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="66.75,257,0,0" VerticalAlignment="Top" Width="228" Height="38" Password="Password" GotFocus="Txtpassword_GotFocus" Background="White" BorderBrush="Black" BorderThickness="0 0 0 1"/>
+            <PasswordBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="66.75,257,0,0" VerticalAlignment="Top" Width="228" Height="38" Password="Password" GotFocus="Txtpassword_GotFocus" Background="White" BorderBrush="Black" BorderThickness="0 0 0 1" KeyUp="txtpassword_keyup"/>
             <Label Content="POLICRISPY&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-5.158,-0.385" Width="146" FontWeight="Bold" FontSize="24" Height="44" Margin="102,10,0,0" Foreground="White"/>
             <Button x:Name="lb" Content="Masuk" HorizontalAlignment="Center" Margin="66.75,335.5,57.75,104" VerticalAlignment="Center" Width="228" Click="lb_Click" Height="31" FontSize="20" Foreground="White" BorderBrush="{x:Null}" Background="#FF1B5A9E"/>
             <Label Content="Poliklinik Software" HorizontalAlignment="Left" Height="30" Margin="102,70,0,0" VerticalAlignment="Top" Width="146" Foreground="White" FontSize="16"/>

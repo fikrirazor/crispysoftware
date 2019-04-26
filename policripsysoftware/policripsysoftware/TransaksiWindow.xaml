@@ -29,7 +29,7 @@
         </StackPanel>
         <DockPanel HorizontalAlignment="Left" Height="89" LastChildFill="False" VerticalAlignment="Top" Width="618.667" Margin="0,408,0,0">
             <Button x:Name="Input_Transaksi" Content="Input Transaksi" HorizontalAlignment="Center" Width="263" Margin="20,0,0,0" Background="White" Foreground="Black" FontSize="22" FontWeight="Bold" Click="Input_Transaksi_Click" VerticalAlignment="Center"/>
-            <Button x:Name="view" Content="View Transaksi" Width="263" Margin="20,0,0,0" Background="White" Foreground="Black" FontSize="22" FontWeight="Bold" Click="Input_Transaksi_Click" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+            <Button x:Name="view" Content="View Transaksi" Width="263" Margin="20,0,0,0" Background="White" Foreground="Black" FontSize="22" FontWeight="Bold" Click="view_Click" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         </DockPanel>
 
     </Grid>

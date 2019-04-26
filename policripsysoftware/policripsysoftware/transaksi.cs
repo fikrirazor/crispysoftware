@@ -16,10 +16,13 @@ namespace policripsysoftware
         private int no_transaksi;
         private string tanggal_transaksi;
         private float total_biaya;
+        private string riwayat;
+        Pasien pasien = new Pasien();
         DbCreator db = new DbCreator();
         public int notransaksi { get { return no_transaksi; } set { no_transaksi = value; } }
         public string tanggaltransaksi { get { return tanggal_transaksi; } set { tanggal_transaksi = value; } }
         public float totalbiaya { get { return total_biaya; } set { total_biaya = value; } }
+        public string riw { get { return riwayat; } set { riwayat = value; } }
 
         public void add()
         {
@@ -27,9 +30,11 @@ namespace policripsysoftware
             SQLiteConnection sql_con = db.sql_con();
             sql_con.Open();
             //Query SQL untuk menambahkan data pada tabel pasien
-            SQLiteCommand Query = new SQLiteCommand("insert into pasien(tanggal_transaksi,total_biaya) values(@b,@c)", sql_con);
+            SQLiteCommand Query = new SQLiteCommand("insert into transaksi(tanggal_transaksi,total_biaya,riwayat,pasien) values(@b,@c,@d,@e)", sql_con);
             Query.Parameters.AddWithValue("@b", tanggaltransaksi);
             Query.Parameters.AddWithValue("@c", totalbiaya);
+            Query.Parameters.AddWithValue("@d", riw);
+            Query.Parameters.AddWithValue("@e", pasien.namapasien);
             try
             {
                 Query.ExecuteNonQuery();

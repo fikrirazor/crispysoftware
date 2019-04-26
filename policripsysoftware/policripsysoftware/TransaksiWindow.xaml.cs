@@ -47,8 +47,18 @@ namespace policripsysoftware
         private void Input_Transaksi_Click(object sender, RoutedEventArgs e)
         {
             ts.tanggaltransaksi = tanggaltransaksitxt.Text;
-            //ts.totalbiaya = hargatxt.Text;
+            double textBoxValue = double.Parse(hargatxt.Text);
+            ts.totalbiaya = textBoxValue;
+            string richText = new TextRange(Riwayattxt.Document.ContentStart, Riwayattxt.Document.ContentEnd).Text;
+            ts.riw = richText;
+            ts.pasiennm = pasientxt.Text;
             ts.add();
+        }
+
+        private void view_Click(object sender, RoutedEventArgs e)
+        {
+            
+            ts.view(transaksidata);
         }
     }
 }

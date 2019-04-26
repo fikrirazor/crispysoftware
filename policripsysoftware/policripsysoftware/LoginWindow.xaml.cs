@@ -40,6 +40,7 @@ namespace policripsysoftware
         {
             peg.usr = txtusername.Text;
             peg.pass = txtpassword.Password;
+            
             peg.login();
             Close();
             
@@ -59,8 +60,26 @@ namespace policripsysoftware
             tb.GotFocus -= Txtpassword_GotFocus;
         }
 
-     
+        private void txtusername_keyup(object sender, KeyEventArgs e)
+        {
+            if (e.Key != System.Windows.Input.Key.Enter) return;
 
+            e.Handled = true;
+            peg.usr = txtusername.Text;
+            peg.pass = txtpassword.Password;
+            peg.login();
+            Close();
+        }
 
+        private void txtpassword_keyup(object sender, KeyEventArgs e)
+        {
+            if (e.Key != System.Windows.Input.Key.Enter) return;
+
+            e.Handled = true;
+            peg.usr = txtusername.Text;
+            peg.pass = txtpassword.Password;
+            peg.login();
+            Close();
+        }
     }
 }

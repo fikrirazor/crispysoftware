@@ -55,6 +55,7 @@ namespace policripsysoftware
             ps.gen = Jenisklamintxt.Text;
             ps.np = nohptxt.Text ;
             ps.ala = alamattxt.Text;
+            ps.dokternm = doktertxt.Text;
             ps.add();
                         
             

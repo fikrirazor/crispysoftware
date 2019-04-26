@@ -54,6 +54,9 @@ namespace policripsysoftware
             MainArea.Children.Add(content as UIElement);
         }
 
-        
+        private void Btn_keluar_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }

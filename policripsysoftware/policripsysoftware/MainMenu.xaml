@@ -31,7 +31,7 @@
                     <Label Content="Kelola&#xD;&#xA;Pengguna" HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextAlignment="Center" FontSize="14" Foreground="Black" FontWeight="Bold"/>
                 </StackPanel>
             </Button>
-            <Button x:Name="btn_keluar"  HorizontalAlignment="Left" Margin="25.333,484,0,0" VerticalAlignment="Top" Width="120.367" Height="108" Background="White" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Verdana" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.502,0.769">
+            <Button x:Name="btn_keluar"  HorizontalAlignment="Left" Margin="25.333,484,0,0" VerticalAlignment="Top" Width="120.367" Height="108" Background="White" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Verdana" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.502,0.769" Click="Btn_keluar_Click">
                 <StackPanel Height="89.5" Width="116.333">
                     <Image Height="38.334" Source="close_1-512.png"/>
                     <Label Content="Keluar" HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextAlignment="Center" FontSize="14" Foreground="Black" FontWeight="Bold"/>

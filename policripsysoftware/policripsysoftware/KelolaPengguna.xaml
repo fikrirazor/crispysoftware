@@ -41,18 +41,18 @@
         <Button Content="Add" HorizontalAlignment="Left" Margin="14,440,0,0" VerticalAlignment="Top" Width="41"/>
         <Button Content="Update" HorizontalAlignment="Left" Margin="98,440,0,0" VerticalAlignment="Top" Width="41"/>
         <Button x:Name="DeleteButtonPasien" Content="Delete" HorizontalAlignment="Left" Margin="254,440,0,0" VerticalAlignment="Top" Width="41" Click="DeleteButtonPasien_Click"/>
-        <DataGrid Height="109" VerticalAlignment="Top" Margin="327.667,304,0,0"/>
-        <Button x:Name="btv_Copy" Content="View" HorizontalAlignment="Left" Margin="487.667,440,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
-        <Button Content="Add" HorizontalAlignment="Left" Margin="327.667,440,0,0" VerticalAlignment="Top" Width="41"/>
-        <Button Content="Update" HorizontalAlignment="Left" Margin="411.667,440,0,0" VerticalAlignment="Top" Width="41"/>
-        <Button Content="Delete" HorizontalAlignment="Left" Margin="567.667,440,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.366,5.21"/>
+        <DataGrid x:Name="datagriddokter" Height="109" VerticalAlignment="Top" Margin="327.667,304,0,0"/>
+        <Button x:Name="viewdokter" Content="View" HorizontalAlignment="Left" Margin="487.667,440,0,0" VerticalAlignment="Top" Width="40" Click="Btv_Click"/>
+        <Button x:Name="adddokter" Content="Add" HorizontalAlignment="Left" Margin="327.667,440,0,0" VerticalAlignment="Top" Width="41" Click="Adddokter_Click"/>
+        <Button x:Name="updatedokter" Content="Update" HorizontalAlignment="Left" Margin="411.667,440,0,0" VerticalAlignment="Top" Width="41"/>
+        <Button x:Name="deletedokter" Content="Delete" HorizontalAlignment="Left" Margin="567.667,440,0,0" VerticalAlignment="Top" Width="41" RenderTransformOrigin="0.366,5.21"/>
         <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="138.667" Margin="314,83,0,0">
             <Label Content="Nama Dokter" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.513,-1.462" Foreground="White" Margin="40,0,-1,10" Width="100" Height="25"/>
             <Label Content="Spesialis" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-1.988,-3.462" Foreground="White" Margin="40,0,-1,10" Width="100" Height="25"/>
         </StackPanel>
         <StackPanel HorizontalAlignment="Left" Height="216" VerticalAlignment="Top" Width="161" Margin="457.667,83,0,0">
-            <TextBox x:Name="namatxt_Copy" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" Margin="40,0,0,10"/>
-            <TextBox x:Name="nohptxt_Copy" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Margin="40,0,0,10"/>
+            <TextBox x:Name="namadoktertxt" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" HorizontalAlignment="Left" Margin="40,0,0,10"/>
+            <TextBox x:Name="spesialistxt" HorizontalAlignment="Left" Height="24" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" Margin="40,0,0,10"/>
         </StackPanel>
 
     </Grid>

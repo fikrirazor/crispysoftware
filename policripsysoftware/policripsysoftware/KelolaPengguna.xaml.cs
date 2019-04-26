@@ -22,6 +22,7 @@ namespace policripsysoftware
     public partial class KelolaPengguna : Window
     {
         Pasien p = new Pasien();
+        Dokter d = new Dokter();
 
         public KelolaPengguna()
         {
@@ -39,6 +40,11 @@ namespace policripsysoftware
             p.delete(this.dataGrid);
         }
 
-        
+        private void Adddokter_Click(object sender, RoutedEventArgs e)
+        {
+            d.namadokter=namadoktertxt.Text;
+            d.spes=spesialistxt.Text;
+            d.add();
+        }
     }
 }

@@ -29,13 +29,15 @@ namespace policripsysoftware
             SQLiteConnection sql_con = db.sql_con();
             sql_con.Open();
             //Query SQL untuk menambahkan data pada tabel pasien
-            SQLiteCommand Query = new SQLiteCommand("insert into pasien(nama_dokter,spesialis) values(@b,@c)", sql_con);
+            SQLiteCommand Query = new SQLiteCommand("insert into dokter(nama_dokter,spesialis) values(@b,@c)", sql_con);
             Query.Parameters.AddWithValue("@b", namadokter);
             Query.Parameters.AddWithValue("@c", spes);
             try
             {
                 Query.ExecuteNonQuery();
                 MessageBox.Show("Berhasil ditambahklan!");
+                KelolaPengguna kp = new KelolaPengguna();
+                kp.Close();
                 MainMenu MM = new MainMenu();
                 MM.Show();
             }
