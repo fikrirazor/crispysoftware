@@ -1,0 +1,60 @@
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.exe.config
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.exe
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.pdb
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\App.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware_MarkupCompile.cache
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware_MarkupCompile.lref
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.g.resources
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.Properties.Resources.resources
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.GenerateResource.cache
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CoreCompileInputs.cache
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.exe
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.pdb
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csprojAssemblyReference.cache
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.dll
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.xml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CopyComplete
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.exe
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.pdb
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csprojAssemblyReference.cache
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LoginWindow.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranBaru.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranLama.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainMenu.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\App.g.cs
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware_MarkupCompile.cache
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware_MarkupCompile.lref
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.exe.config
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.exe
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\policripsysoftware.pdb
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\nunit.framework.dll
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.dll
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\nunit.framework.pdb
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\nunit.framework.xml
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.xml
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\System.Data.SQLite.dll.config
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.baml
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LoginWindow.baml
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranBaru.baml
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\PendaftaranLama.baml
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainMenu.baml
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.g.resources
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.Properties.Resources.resources
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.GenerateResource.cache
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CoreCompileInputs.cache
+C:\Users\Ilmam Rafidan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\policripsysoftware.csproj.CopyComplete
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\nunit.framework.dll
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\nunit.framework.pdb
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Debug\nunit.framework.xml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LoginWindow.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainMenu.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\KelolaPengguna.baml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\LoginWindow.baml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\MainMenu.baml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\Pendaftaran.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\Pendaftaran.baml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\TransaksiWindow.g.cs
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Debug\TransaksiWindow.baml

@@ -1,0 +1,46 @@
+﻿<Window x:Class="policripsysoftware.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:policripsysoftware"
+        mc:Ignorable="d"
+        Title="pasien window" Height="593" Width="800" WindowStyle="None" AllowsTransparency="True" Background="Transparent" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" Icon="logo.jpg">
+    <Grid x:Name="panel1"  >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid HorizontalAlignment="Left" Height="595" Margin="0,-2,0,0" VerticalAlignment="Top" Width="176" Background="#FFFBFBFB">
+            <Image Height="159" VerticalAlignment="Top" Source="logo.jpg" StretchDirection="DownOnly" RenderTransformOrigin="0.494,0.505" Margin="0,0,-0.166,0"/>
+            <Button x:Name="bb" HorizontalAlignment="Left" Margin="25.333,157,0,0" VerticalAlignment="Top" Width="120.367" Height="101" Click="Bb_Click" BorderBrush="{x:Null}" Foreground="White" FontFamily="Verdana" TextOptions.TextFormattingMode="Display" Background="White" Opacity="0.985">
+                <StackPanel Height="78" Width="109.634">
+                    <Image Height="37.083" Source="011-clipboard.png"/>
+                    <Label Content="Pendaftaran " HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextAlignment="Center" Height="42.5" Width="109.634" Foreground="Black" FontSize="14" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="bl" HorizontalAlignment="Left" Margin="25.333,258,0,0" VerticalAlignment="Top" Width="120.367" Height="108" Click="Bl_Click" Background="White" BorderBrush="{x:Null}" Foreground="White" FontFamily="Verdana" TextOptions.TextFormattingMode="Display">
+                <StackPanel Height="75" Width="116.333">
+                    <Image Height="38.334" Source="023-hospital.png"/>
+                    <Label Content="Transaksi" HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextAlignment="Center" FontSize="14" Foreground="Black" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="bkp"  HorizontalAlignment="Left" Margin="25.333,371,0,0" VerticalAlignment="Top" Width="120.367" Height="108" Click="Bkp_Click" Background="White" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Verdana" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.502,0.769">
+                <StackPanel Height="89.5" Width="116.333">
+                    <Image Height="38.334" Source="017-doctor.png"/>
+                    <Label Content="Kelola&#xD;&#xA;Pengguna" HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextAlignment="Center" FontSize="14" Foreground="Black" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+            <Button x:Name="btn_keluar"  HorizontalAlignment="Left" Margin="25.333,484,0,0" VerticalAlignment="Top" Width="120.367" Height="108" Background="White" BorderBrush="{x:Null}" Foreground="Black" FontFamily="Verdana" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="0.502,0.769" Click="Btn_keluar_Click">
+                <StackPanel Height="89.5" Width="116.333">
+                    <Image Height="38.334" Source="close_1-512.png"/>
+                    <Label Content="Keluar" HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextAlignment="Center" FontSize="14" Foreground="Black" FontWeight="Bold"/>
+                </StackPanel>
+            </Button>
+        </Grid>
+        <Grid x:Name="MainArea" Opacity="0.9" Background="#FF0B0B13" HorizontalAlignment="Left" Height="595" Margin="176,-2,-626.667,0" RenderTransformOrigin="0.491,0.495" VerticalAlignment="Top" Width="626.667" >
+            <Label Content="Selamat datang di poliklinik IFIK 3903" FontSize="20" FontWeight="Bold" Background="{x:Null}" Foreground="White" Margin="122,147,137.5,295"/>
+        </Grid>
+
+    </Grid>
+</Window>
