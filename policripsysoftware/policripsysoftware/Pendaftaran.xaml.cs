@@ -57,7 +57,7 @@ namespace policripsysoftware
             ps.ala = alamattxt.Text;
             ps.dokternm = doktertxt.Text;
             ps.add();
-                        
+            Close();    
             
         }
 
