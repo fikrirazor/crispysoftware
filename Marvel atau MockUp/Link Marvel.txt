@@ -1,1 +1,29 @@
 https://marvelapp.com/ba549b1
+
+#titip
+##edit_db_input
+private void Input_Transaksi_Click(object sender, RoutedEventArgs e)
+        {
+            ts.tanggaltransaksi = tanggaltransaksitxt.Text;
+            double textBoxValue = double.Parse(hargatxt.Text);
+            ts.totalbiaya = textBoxValue;
+            string richText = new TextRange(Riwayattxt.Document.ContentStart, Riwayattxt.Document.ContentEnd).Text;
+            ts.riw = richText;
+            ts.pasiennm = pasientxt.Text;
+            ts.add();
+        }
+
+        private void view_Click(object sender, RoutedEventArgs e)
+        {
+            
+            ts.view(transaksidata);
+        }
+
+        private void Hargatxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(hargatxt.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Maaf Masukan Hanya Angka");
+                hargatxt.Text = hargatxt.Text.Remove(hargatxt.Text.Length - 1);
+            }
+        }
