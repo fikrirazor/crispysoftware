@@ -60,16 +60,6 @@ namespace policripsysoftware
             
         }
 
-        private void Doktertxt_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            
-                
-
-
-
-
-
-
-        }
+       
     }
 }

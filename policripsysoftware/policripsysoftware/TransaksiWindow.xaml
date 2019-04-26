@@ -27,6 +27,7 @@
         <StackPanel HorizontalAlignment="Left" Height="180" Margin="0,317,0,0" VerticalAlignment="Top" Width="619">
             <DataGrid x:Name="transaksidata" Height="72" Margin="114,0,126,0"/>
             <Button x:Name="Input_Transaksi" Content="Input Transaksi" HorizontalAlignment="Center" Width="263" Height="39" Margin="178,50,178,0" Background="White" Foreground="Black" FontSize="22" FontWeight="Bold" Click="Input_Transaksi_Click"/>
+            <Button x:Name="view" Content="Input Transaksi" HorizontalAlignment="Center" Width="263" Height="39" Margin="178,50,178,0" Background="White" Foreground="Black" FontSize="22" FontWeight="Bold" Click="Input_Transaksi_Click"/>
         </StackPanel>
 
     </Grid>
