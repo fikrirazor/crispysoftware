@@ -19,7 +19,7 @@ namespace policripsysoftware
         private string gender;
         private string nohp;
         private string alamat;
-        private Dokter dokter;
+        Dokter dokter;
      
         DbCreator db = new DbCreator();
 
