@@ -133,5 +133,14 @@ namespace policripsysoftware
             p.dokternm = doktertxt.Text;
             p.update();
         }
+
+        private void Nohptxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(nohptxt.Text, "^(^\\+62\\s?|^0)(\\d{3,4}-?){2}\\d{3,4}$"))
+            {
+                MessageBox.Show("Format salah Contoh : 085641910342.");
+                nohptxt.Text = nohptxt.Text.Remove(nohptxt.Text.Length - 1);
+            }
+        }
     }
 }

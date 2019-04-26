@@ -18,7 +18,7 @@
         </StackPanel>
         <StackPanel Margin="213,62,0,180" Orientation="Vertical">
             <ComboBox x:Name="pasientxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
-            <TextBox x:Name="hargatxt" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="40,0,0,10"/>
+            <TextBox x:Name="hargatxt" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" TextChanged="Hargatxt_TextChanged"/>
             <DatePicker x:Name="tanggaltransaksitxt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="180" Margin="40,0,0,10" Height="35"/>
             <RichTextBox x:Name="Riwayattxt" Height="93" Margin="40,0,22,0">
                 <FlowDocument/>

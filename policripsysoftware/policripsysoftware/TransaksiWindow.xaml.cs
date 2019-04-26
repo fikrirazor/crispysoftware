@@ -60,5 +60,14 @@ namespace policripsysoftware
             
             ts.view(transaksidata);
         }
+
+        private void Hargatxt_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(hargatxt.Text, "[^0-9]"))
+            {
+                MessageBox.Show("Maaf Masukan Hanya Angka");
+                hargatxt.Text = hargatxt.Text.Remove(hargatxt.Text.Length - 1);
+            }
+        }
     }
 }
