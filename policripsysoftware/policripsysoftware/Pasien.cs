@@ -19,7 +19,7 @@ namespace policripsysoftware
         private string gender;
         private string nohp;
         private string alamat;
-        Dokter dokter = new Dokter();
+        private string dokter;
      
         DbCreator db = new DbCreator();
 
@@ -32,7 +32,7 @@ namespace policripsysoftware
         public string gen { get { return gender; } set { gender = value; } }
         public string np { get { return nohp; } set { nohp = value; } }
         public string ala { get { return alamat ; } set { alamat = value; } }
-        public string dokternm { get { return dokter.namadokter; } set { dokter.namadokter = value; } }
+        public string dokternm { get { return dokter; } set { dokter = value; } }
         
         ///Method untuk menambahkan data pada database
         public void add()

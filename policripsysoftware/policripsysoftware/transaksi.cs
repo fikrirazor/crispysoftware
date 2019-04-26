@@ -17,13 +17,13 @@ namespace policripsysoftware
         private string tanggal_transaksi;
         private double total_biaya;
         private string riwayat;
-        Pasien pasien = new Pasien();
+        private string pasien;
         DbCreator db = new DbCreator();
         public int notransaksi { get { return no_transaksi; } set { no_transaksi = value; } }
         public string tanggaltransaksi { get { return tanggal_transaksi; } set { tanggal_transaksi = value; } }
         public double totalbiaya { get { return total_biaya; } set { total_biaya = value; } }
         public string riw { get { return riwayat; } set { riwayat = value; } }
-        public string pasiennm { get { return pasien.namapasien; } set { pasien.namapasien = value; } }
+        public string pasiennm { get { return pasien; } set { pasien = value; } }
         public void add()
         {
             //melakukan koneksi database
