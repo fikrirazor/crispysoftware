@@ -10,6 +10,6 @@ Poliklinik adalah klinik yang menyediakan pemeriksaan dan perawatan umum dan spe
 # Thanks To
   - Designer System & Tester [ilmamrh](https://github.com/ilmamrh)
   - Designer Interface [ragil10](https://github.com/ragil10)
-  - Programmer 2 [Ryuma12](https://github.com/Ryuma12)
+  - Programmer 2 & Database [Ryuma12](https://github.com/Ryuma12)
   - Designer System & Tester [buildGather](https://github.com/buildGather)
   - [ashaury](https://github.com/ashaury)
