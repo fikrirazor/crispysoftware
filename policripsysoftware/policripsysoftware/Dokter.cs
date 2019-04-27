@@ -29,7 +29,9 @@ namespace policripsysoftware
             SQLiteConnection sql_con = db.sql_con();
             sql_con.Open();
             //Query SQL untuk menambahkan data pada tabel pasien
-            SQLiteCommand Query = new SQLiteCommand("insert into dokter(nama_dokter,spesialis) values(@b,@c)", sql_con);
+            if (!(namadokter == String.Empty || spes == String.Empty))
+            {
+                SQLiteCommand Query = new SQLiteCommand("insert into dokter(nama_dokter,spesialis) values(@b,@c)", sql_con);
             Query.Parameters.AddWithValue("@b", namadokter);
             Query.Parameters.AddWithValue("@c", spes);
             try
@@ -38,12 +40,17 @@ namespace policripsysoftware
                 MessageBox.Show("Berhasil ditambahklan!");
                 KelolaPengguna kp = new KelolaPengguna();
                 kp.Close();
-                MainMenu MM = new MainMenu();
-                MM.Show();
+                
             }
             catch (Exception ex)
             {
                 throw new Exception(ex.Message);
+            }
+            }
+            else
+            {
+                MessageBox.Show("Data tidak boleh Kosong!");
+                
             }
         }
         public void delete(DataGrid dataGrid)
@@ -57,7 +64,7 @@ namespace policripsysoftware
             foreach (var item in dataGrid.SelectedItems.Cast<DataRowView>())
             {
                 //Query sql untuk menghapus data 
-                using (SQLiteCommand comm = new SQLiteCommand("DELETE FROM dokter WHERE no_pasien=" + item["no_pasien"], sql_con))
+                using (SQLiteCommand comm = new SQLiteCommand("DELETE FROM dokter WHERE no_dokter=" + item["no_dokter"], sql_con))
                 {
                     comm.ExecuteNonQuery();
                 }
@@ -68,22 +75,29 @@ namespace policripsysoftware
         {
             SQLiteConnection sql_con = db.sql_con();
             sql_con.Open();
-            SQLiteCommand Query = new SQLiteCommand("update dokter SET nama_dokter=@b,spesialis=@c WHERE no_dokter = @a;", sql_con);
-            Query.Parameters.AddWithValue("@a", nodokter);
-            Query.Parameters.AddWithValue("@b", namadokter);
-            Query.Parameters.AddWithValue("@c", spes);
-            try
+            if (!(namadokter == String.Empty || spes == String.Empty))
             {
-                Query.ExecuteNonQuery();
-                MessageBox.Show("Update Berhasil!");
-                KelolaPengguna kp = new KelolaPengguna();
-                kp.Close();
-                MainMenu MM = new MainMenu();
-                MM.Show();
+                SQLiteCommand Query = new SQLiteCommand("update dokter SET nama_dokter=@b,spesialis=@c WHERE no_dokter = @a;", sql_con);
+                Query.Parameters.AddWithValue("@a", nodokter);
+                Query.Parameters.AddWithValue("@b", namadokter);
+                Query.Parameters.AddWithValue("@c", spes);
+                try
+                {
+                    Query.ExecuteNonQuery();
+                    MessageBox.Show("Update Berhasil!");
+                    KelolaPengguna kp = new KelolaPengguna();
+                    kp.Close();
+                    
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                throw new Exception(ex.Message);
+                MessageBox.Show("Data tidak boleh Kosong!");
+                
             }
         }
         //Method untuk melihat data
@@ -97,6 +111,7 @@ namespace policripsysoftware
             da.Fill(ds);
             DataTable dt = ds.Tables[0];
             dataGrid.ItemsSource = dt.AsDataView();
+            MessageBox.Show("Data Disegarkan!");
         }
     }
 }

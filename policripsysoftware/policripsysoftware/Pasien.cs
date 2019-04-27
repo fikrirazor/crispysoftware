@@ -42,24 +42,27 @@ namespace policripsysoftware
             sql_con.Open();
             //Query SQL untuk menambahkan data pada tabel pasien
             SQLiteCommand Query = new SQLiteCommand("insert into pasien(nama_pasien,tanggal_lahir,gender,nohp,alamat,dokter) values(@b,@c,@d,@e,@f,@g)", sql_con);
-            Query.Parameters.AddWithValue("@b", namapasien);
-            Query.Parameters.AddWithValue("@c", tanggallahir);
-            Query.Parameters.AddWithValue("@d", gen);
-            Query.Parameters.AddWithValue("@e", np);
-            Query.Parameters.AddWithValue("@f", ala);
-            Query.Parameters.AddWithValue("@g", dokternm);
-            try
+            if(!(namapasien == String.Empty || tanggallahir == String.Empty || gen == String.Empty || ala == String.Empty ))
             {
-                Query.ExecuteNonQuery();
-                MessageBox.Show("Pendaftaran Berhasil!");
-                Pendaftaran pbw = new Pendaftaran();
-                pbw.Close();
-                MainMenu MM = new MainMenu();
-                MM.Show();
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
+                Query.Parameters.AddWithValue("@b", namapasien);
+                Query.Parameters.AddWithValue("@c", tanggallahir);
+                Query.Parameters.AddWithValue("@d", gen);
+                Query.Parameters.AddWithValue("@e", np);
+                Query.Parameters.AddWithValue("@f", ala);
+                Query.Parameters.AddWithValue("@g", dokternm);
+                try
+                {
+                    Query.ExecuteNonQuery();
+                    MessageBox.Show("Berhasil!");
+                    
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception(ex.Message);
+                }
+            }else{
+                MessageBox.Show("Data tidak boleh Kosong!");
+               
             }
         }
 
@@ -98,8 +101,7 @@ namespace policripsysoftware
                 MessageBox.Show("Update Berhasil!");
                 KelolaPengguna kp = new KelolaPengguna();
                 kp.Close();
-                MainMenu MM = new MainMenu();
-                MM.Show();
+                
             }
             catch (Exception ex)
             {
@@ -118,6 +120,7 @@ namespace policripsysoftware
             da.Fill(ds);
             DataTable dt = ds.Tables[0];
             dataGrid.ItemsSource = dt.AsDataView();
+            MessageBox.Show("Data Disegarkan!");
         }
 
 
