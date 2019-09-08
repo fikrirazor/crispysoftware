@@ -1,4 +1,6 @@
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Release\policripsysoftware.exe.config
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Release\policripsysoftware.exe.manifest
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Release\policripsysoftware.application
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Release\policripsysoftware.exe
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Release\policripsysoftware.pdb
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\bin\Release\nunit.framework.dll
@@ -25,6 +27,9 @@ C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoft
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.Properties.Resources.resources
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.csproj.GenerateResource.cache
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.csproj.CoreCompileInputs.cache
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.TrustInfo.xml
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.exe.manifest
+C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.application
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.csproj.CopyComplete
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.exe
 C:\Users\Rozan\Documents\GitHub\crispysoftware\policripsysoftware\policripsysoftware\obj\Release\policripsysoftware.pdb

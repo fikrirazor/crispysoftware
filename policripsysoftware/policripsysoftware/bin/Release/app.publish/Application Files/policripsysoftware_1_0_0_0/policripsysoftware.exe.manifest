@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="policripsysoftware.exe" version="1.0.0.0" publicKeyToken="a4534ea21df8a375" language="en" processorArchitecture="msil" type="win32" />
+  <description asmv2:publisher="policripsy" co.v1:suiteName="policripsy" asmv2:product="policripsy" xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="policripsysoftware" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="policripsysoftware.exe" parameters="" />
+  </entryPoint>
+  <co.v1:useManifestForTrust xmlns="urn:schemas-microsoft-com:asm.v1" />
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet version="1" class="System.Security.NamedPermissionSet" Name="LocalIntranet" Description="Default rights given to applications on the local intranet" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+             If you want to change the Windows User Account Control level replace the 
+             requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            Specifying requestedExecutionLevel element will disable file and registry virtualization. 
+            Remove this element if your application requires this virtualization for backwards
+            compatibility.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="nunit.framework.dll" size="387072">
+      <assemblyIdentity name="nunit.framework" version="3.11.0.0" publicKeyToken="2638CD05610744EB" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>+TDqRS4LyYAwuves9RubjBAm+4DvBcOFnZ8uCcTGWJk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="policripsysoftware.exe" size="509920">
+      <assemblyIdentity name="policripsysoftware" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xcGqtSP+xwSJ/DqJD80eiWvgmA0JkgUyt0I6tF044CA=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="System.Data.SQLite.dll" size="352256">
+      <assemblyIdentity name="System.Data.SQLite" version="1.0.110.0" publicKeyToken="DB937BC2D44FF139" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>PZZn6QaLtVX1ubzLrBh1pusOngBlXeNpvkpkBSKT68s=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="policripsysoftware.exe.config" size="186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eSEJjkfolEEv39DK/g+IzGhJd0CZjqwXxowAEpBp2AM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">
+    <application>
+      <!-- A list of the Windows versions that this application has been tested on
+           and is designed to work with. Uncomment the appropriate elements
+           and Windows will automatically select the most compatible environment. -->
+      <!-- Windows Vista -->
+      <!--<supportedOS Id="{e2011457-1546-43c5-a5fe-008deee3d3f0}" />-->
+      <!-- Windows 7 -->
+      <!--<supportedOS Id="{35138b9a-5d96-4fbd-8e2d-a2440225f93a}" />-->
+      <!-- Windows 8 -->
+      <!--<supportedOS Id="{4a2f28e3-53b9-4441-ba9c-d69d4a4a6e38}" />-->
+      <!-- Windows 8.1 -->
+      <!--<supportedOS Id="{1f676c76-80e1-4239-95bb-83d0f6d0da78}" />-->
+      <!-- Windows 10 -->
+      <!--<supportedOS Id="{8e0f7a12-bfb3-4fe8-b9a5-48fd50a15a9a}" />-->
+    </application>
+  </compatibility>
+<publisherIdentity name="CN=DESKTOP-MA4H3EK\Rozan" issuerKeyHash="8dd7de427fe3a6d985ebbdf670b328da821acbd7" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>BRK/ZTgpIzqCIOC5XG02Km9rH/e29f7NaBpuTuVhTmc=</DigestValue></Reference></SignedInfo><SignatureValue>gY7WT7XuztUXrFE5OLbo/dEarRmfcHb8KCSxD22nG2CHaaA1nyMVoBauHL2Lqg7mL3ArD3fYrgv/pqar6O2B58CwwYW5LaeZZtbGsp/vK9LXYcOwTLRrvlRvad+mmG6m7MrVWem4ImRHAQJ5sTTHmVNK6sguIJ0JVmGu7PeCfh4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>42Z8BJny++kMxooOYjX9y2s8j7DyvbscC52nO4vJMoKtdGsarww8OB4VtoWT3rojcsrdFNGg641fEHjNO0j+NRU5AHjHlv+DxsALwKLRM1qIc9gnYUWDX09es7TqgTc+kazDKi/t4J0iN6Y9jtxQbVdmQeiZQvKRLdwp3NetsW0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="674e61e54e6e1a68cdfef5b6f71f6b6f2a366d5cb9e020823a23293865bf1205" Description="" Url=""><as:assemblyIdentity name="policripsysoftware.exe" version="1.0.0.0" publicKeyToken="a4534ea21df8a375" language="en" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DESKTOP-MA4H3EK\Rozan</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>7lgxpGz51x/MkxC96Na0u9uJUuhCfeB1L7jt9Vj2iUM=</DigestValue></Reference></SignedInfo><SignatureValue>GVCZN7CoamD2G1UHJ/1hN6AK7HIrrkOqAoVT5cZicQpUco2Fyx3Q9ziK3PlConaA0SzRKJrlxgDwxi3wP6C3Vsg+6vof5lpeUQcHixmb8/FINjcYaDikpqgqQLB4Pv2VnuOWN99+w9wywSpVsBomr0rgWqFZOgDSf8NPFwYCnuo=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>42Z8BJny++kMxooOYjX9y2s8j7DyvbscC52nO4vJMoKtdGsarww8OB4VtoWT3rojcsrdFNGg641fEHjNO0j+NRU5AHjHlv+DxsALwKLRM1qIc9gnYUWDX09es7TqgTc+kazDKi/t4J0iN6Y9jtxQbVdmQeiZQvKRLdwp3NetsW0=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVagAwIBAgIQMFwcwkqJMrxO99Ob1RaoVTANBgkqhkiG9w0BAQsFADA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE0AQQA0AEgAMwBFAEsAXABSAG8AegBhAG4wHhcNMTkwNDI3MDMzNzU4WhcNMjAwNDI2MDkzNzU4WjA1MTMwMQYDVQQDHioARABFAFMASwBUAE8AUAAtAE0AQQA0AEgAMwBFAEsAXABSAG8AegBhAG4wgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAONmfASZ8vvpDMaKDmI1/ctrPI+w8r27HAudpzuLyTKCrXRrGq8MPDgeFbaFk966I3LK3RTRoOuNXxB4zTtI/jUVOQB4x5b/g8bAC8Ci0TNaiHPYJ2FFg19PXrO06oE3PpGswyov7eCdIjemPY7cUG1XZkHomULykS3cKdzXrbFtAgMBAAEwDQYJKoZIhvcNAQELBQADgYEAaYog1zPyJ9D3/QZs3PMsa8K97nNia3De04BJvsJcy/JSWzH/fbgiyKbqSsFdumb7ap3ctDv4XKcmR71DCLKcbieJma/jXeZVMIJA/2DBOtsM1UrlFFl+GvYmIIoOWL3beQ1agtGeDOHJdd6Gb6zyjt8dQe2MYVvKdHdyoLwalyk=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
